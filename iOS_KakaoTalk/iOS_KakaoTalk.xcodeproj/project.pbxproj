@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77349127273F9856009CA146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77349126273F9856009CA146 /* AppDelegate.swift */; };
+		77349129273F9856009CA146 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77349128273F9856009CA146 /* SceneDelegate.swift */; };
+		77349130273F9859009CA146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7734912F273F9859009CA146 /* Assets.xcassets */; };
+		77349133273F9859009CA146 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77349131273F9859009CA146 /* LaunchScreen.storyboard */; };
+		7734913E273F9C33009CA146 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7734913D273F9C33009CA146 /* Constants.swift */; };
+		77349142273F9C60009CA146 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77349141273F9C60009CA146 /* UIColor.swift */; };
+		77349149273F9D6C009CA146 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77349148273F9D6C009CA146 /* Token.swift */; };
+		7734914C273F9D9A009CA146 /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7734914B273F9D9A009CA146 /* Temp.swift */; };
+		7734915D273F9F25009CA146 /* BaseTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7734915C273F9F25009CA146 /* BaseTabBar.storyboard */; };
+		7734915F273FA006009CA146 /* Friend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7734915E273FA006009CA146 /* Friend.storyboard */; };
+		77349161273FA012009CA146 /* Chatting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77349160273FA012009CA146 /* Chatting.storyboard */; };
+		77349163273FA01C009CA146 /* View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77349162273FA01C009CA146 /* View.storyboard */; };
+		77349165273FA064009CA146 /* Shop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77349164273FA064009CA146 /* Shop.storyboard */; };
+		77349167273FA092009CA146 /* Plus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77349166273FA092009CA146 /* Plus.storyboard */; };
+		77349169273FA158009CA146 /* FriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77349168273FA158009CA146 /* FriendVC.swift */; };
+		7734916B273FA166009CA146 /* ChattingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7734916A273FA166009CA146 /* ChattingVC.swift */; };
+		7734916D273FA176009CA146 /* ViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7734916C273FA176009CA146 /* ViewVC.swift */; };
+		7734916F273FA17F009CA146 /* ShopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7734916E273FA17F009CA146 /* ShopVC.swift */; };
+		77349171273FA18B009CA146 /* PlusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77349170273FA18B009CA146 /* PlusVC.swift */; };
+		77349174273FA1A5009CA146 /* Temp1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77349173273FA1A5009CA146 /* Temp1.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		77349123273F9856009CA146 /* iOS_KakaoTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_KakaoTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77349126273F9856009CA146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		77349128273F9856009CA146 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7734912F273F9859009CA146 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77349132273F9859009CA146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77349134273F9859009CA146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7734913D273F9C33009CA146 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		77349141273F9C60009CA146 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		77349148273F9D6C009CA146 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		7734914B273F9D9A009CA146 /* Temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temp.swift; sourceTree = "<group>"; };
+		7734915C273F9F25009CA146 /* BaseTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaseTabBar.storyboard; sourceTree = "<group>"; };
+		7734915E273FA006009CA146 /* Friend.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Friend.storyboard; sourceTree = "<group>"; };
+		77349160273FA012009CA146 /* Chatting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chatting.storyboard; sourceTree = "<group>"; };
+		77349162273FA01C009CA146 /* View.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = View.storyboard; sourceTree = "<group>"; };
+		77349164273FA064009CA146 /* Shop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shop.storyboard; sourceTree = "<group>"; };
+		77349166273FA092009CA146 /* Plus.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Plus.storyboard; sourceTree = "<group>"; };
+		77349168273FA158009CA146 /* FriendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendVC.swift; sourceTree = "<group>"; };
+		7734916A273FA166009CA146 /* ChattingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingVC.swift; sourceTree = "<group>"; };
+		7734916C273FA176009CA146 /* ViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewVC.swift; sourceTree = "<group>"; };
+		7734916E273FA17F009CA146 /* ShopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopVC.swift; sourceTree = "<group>"; };
+		77349170273FA18B009CA146 /* PlusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusVC.swift; sourceTree = "<group>"; };
+		77349173273FA1A5009CA146 /* Temp1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temp1.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77349120273F9856009CA146 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7734911A273F9856009CA146 = {
+			isa = PBXGroup;
+			children = (
+				77349125273F9856009CA146 /* iOS_KakaoTalk */,
+				77349124273F9856009CA146 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77349124273F9856009CA146 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77349123273F9856009CA146 /* iOS_KakaoTalk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77349125273F9856009CA146 /* iOS_KakaoTalk */ = {
+			isa = PBXGroup;
+			children = (
+				7734913A273F9BCF009CA146 /* Configuration */,
+				7734913B273F9BD8009CA146 /* Sources */,
+				77349131273F9859009CA146 /* LaunchScreen.storyboard */,
+				77349134273F9859009CA146 /* Info.plist */,
+			);
+			path = iOS_KakaoTalk;
+			sourceTree = "<group>";
+		};
+		7734913A273F9BCF009CA146 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				7734912F273F9859009CA146 /* Assets.xcassets */,
+				7734913D273F9C33009CA146 /* Constants.swift */,
+				77349155273F9E87009CA146 /* Storyboards */,
+				77349140273F9C43009CA146 /* Secret */,
+				7734913C273F9BFB009CA146 /* Extension */,
+				7734914A273F9D7D009CA146 /* Font */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		7734913B273F9BD8009CA146 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				77349175273FA1E3009CA146 /* Delegates */,
+				77349172273FA191009CA146 /* Cell */,
+				77349144273F9CBF009CA146 /* ViewController */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		7734913C273F9BFB009CA146 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				77349141273F9C60009CA146 /* UIColor.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		77349140273F9C43009CA146 /* Secret */ = {
+			isa = PBXGroup;
+			children = (
+				77349148273F9D6C009CA146 /* Token.swift */,
+			);
+			path = Secret;
+			sourceTree = "<group>";
+		};
+		77349144273F9CBF009CA146 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				77349168273FA158009CA146 /* FriendVC.swift */,
+				7734916A273FA166009CA146 /* ChattingVC.swift */,
+				7734916C273FA176009CA146 /* ViewVC.swift */,
+				7734916E273FA17F009CA146 /* ShopVC.swift */,
+				77349170273FA18B009CA146 /* PlusVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7734914A273F9D7D009CA146 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				7734914B273F9D9A009CA146 /* Temp.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		77349155273F9E87009CA146 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7734915C273F9F25009CA146 /* BaseTabBar.storyboard */,
+				7734915E273FA006009CA146 /* Friend.storyboard */,
+				77349160273FA012009CA146 /* Chatting.storyboard */,
+				77349162273FA01C009CA146 /* View.storyboard */,
+				77349164273FA064009CA146 /* Shop.storyboard */,
+				77349166273FA092009CA146 /* Plus.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		77349172273FA191009CA146 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				77349173273FA1A5009CA146 /* Temp1.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		77349175273FA1E3009CA146 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				77349126273F9856009CA146 /* AppDelegate.swift */,
+				77349128273F9856009CA146 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77349122273F9856009CA146 /* iOS_KakaoTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77349137273F9859009CA146 /* Build configuration list for PBXNativeTarget "iOS_KakaoTalk" */;
+			buildPhases = (
+				7734911F273F9856009CA146 /* Sources */,
+				77349120273F9856009CA146 /* Frameworks */,
+				77349121273F9856009CA146 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOS_KakaoTalk;
+			productName = iOS_KakaoTalk;
+			productReference = 77349123273F9856009CA146 /* iOS_KakaoTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7734911B273F9856009CA146 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					77349122273F9856009CA146 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 7734911E273F9856009CA146 /* Build configuration list for PBXProject "iOS_KakaoTalk" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7734911A273F9856009CA146;
+			productRefGroup = 77349124273F9856009CA146 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77349122273F9856009CA146 /* iOS_KakaoTalk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77349121273F9856009CA146 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77349165273FA064009CA146 /* Shop.storyboard in Resources */,
+				77349167273FA092009CA146 /* Plus.storyboard in Resources */,
+				7734915F273FA006009CA146 /* Friend.storyboard in Resources */,
+				77349133273F9859009CA146 /* LaunchScreen.storyboard in Resources */,
+				77349130273F9859009CA146 /* Assets.xcassets in Resources */,
+				77349161273FA012009CA146 /* Chatting.storyboard in Resources */,
+				77349163273FA01C009CA146 /* View.storyboard in Resources */,
+				7734915D273F9F25009CA146 /* BaseTabBar.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7734911F273F9856009CA146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7734914C273F9D9A009CA146 /* Temp.swift in Sources */,
+				7734916D273FA176009CA146 /* ViewVC.swift in Sources */,
+				77349169273FA158009CA146 /* FriendVC.swift in Sources */,
+				77349127273F9856009CA146 /* AppDelegate.swift in Sources */,
+				7734916F273FA17F009CA146 /* ShopVC.swift in Sources */,
+				77349129273F9856009CA146 /* SceneDelegate.swift in Sources */,
+				77349149273F9D6C009CA146 /* Token.swift in Sources */,
+				77349171273FA18B009CA146 /* PlusVC.swift in Sources */,
+				7734913E273F9C33009CA146 /* Constants.swift in Sources */,
+				7734916B273FA166009CA146 /* ChattingVC.swift in Sources */,
+				77349174273FA1A5009CA146 /* Temp1.swift in Sources */,
+				77349142273F9C60009CA146 /* UIColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		77349131273F9859009CA146 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77349132273F9859009CA146 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77349135273F9859009CA146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77349136273F9859009CA146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77349138273F9859009CA146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3VFJ764ZC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOS_KakaoTalk/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = BaseTabBar;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "YJC.iOS-KakaoTalk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77349139273F9859009CA146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3VFJ764ZC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOS_KakaoTalk/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = BaseTabBar;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "YJC.iOS-KakaoTalk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7734911E273F9856009CA146 /* Build configuration list for PBXProject "iOS_KakaoTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77349135273F9859009CA146 /* Debug */,
+				77349136273F9859009CA146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77349137273F9859009CA146 /* Build configuration list for PBXNativeTarget "iOS_KakaoTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77349138273F9859009CA146 /* Debug */,
+				77349139273F9859009CA146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7734911B273F9856009CA146 /* Project object */;
+}
