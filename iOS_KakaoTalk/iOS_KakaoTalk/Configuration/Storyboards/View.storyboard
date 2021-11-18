@@ -58,25 +58,51 @@
                                             <constraint firstAttribute="height" constant="2" id="tfT-Nd-uiM"/>
                                         </constraints>
                                     </view>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZHF-de-hcV">
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHF-de-hcV">
                                         <rect key="frame" x="0.0" y="30" width="3000" height="98"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4U-tl-NiO">
-                                                <rect key="frame" x="0.0" y="0.0" width="3000" height="128"/>
+                                                <rect key="frame" x="0.0" y="-2" width="3000" height="128"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OlK-Hp-3R7">
                                                         <rect key="frame" x="0.0" y="0.0" width="3000" height="128"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ZJ-oQ-7mI">
                                                                 <rect key="frame" x="0.0" y="0.0" width="750" height="128"/>
+                                                                <subviews>
+                                                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ci2-BQ-AWA">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="750" height="128"/>
+                                                                        <connections>
+                                                                            <segue destination="Wm2-bh-09L" kind="embed" id="TfG-oO-GTP"/>
+                                                                        </connections>
+                                                                    </containerView>
+                                                                </subviews>
                                                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                                 <constraints>
+                                                                    <constraint firstItem="ci2-BQ-AWA" firstAttribute="top" secondItem="8ZJ-oQ-7mI" secondAttribute="top" id="9l1-Y9-hGY"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="ci2-BQ-AWA" secondAttribute="bottom" id="Cgc-0G-ihZ"/>
                                                                     <constraint firstAttribute="width" constant="750" id="kp5-j3-phu"/>
+                                                                    <constraint firstItem="ci2-BQ-AWA" firstAttribute="leading" secondItem="8ZJ-oQ-7mI" secondAttribute="leading" id="swr-OT-hqy"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="ci2-BQ-AWA" secondAttribute="trailing" id="wdP-Br-A0s"/>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iS2-bj-mSi">
                                                                 <rect key="frame" x="750" y="0.0" width="750" height="128"/>
+                                                                <subviews>
+                                                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="orG-TQ-yka">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="750" height="128"/>
+                                                                        <connections>
+                                                                            <segue destination="J3j-kK-QeC" kind="embed" id="nAj-AD-eC6"/>
+                                                                        </connections>
+                                                                    </containerView>
+                                                                </subviews>
                                                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="orG-TQ-yka" secondAttribute="trailing" id="D0f-Wr-Vdj"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="orG-TQ-yka" secondAttribute="bottom" id="ELx-X4-0WN"/>
+                                                                    <constraint firstItem="orG-TQ-yka" firstAttribute="leading" secondItem="iS2-bj-mSi" secondAttribute="leading" id="FWf-7Q-dQI"/>
+                                                                    <constraint firstItem="orG-TQ-yka" firstAttribute="top" secondItem="iS2-bj-mSi" secondAttribute="top" id="Sbq-PE-Oy4"/>
+                                                                </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NEb-Pi-gjO">
                                                                 <rect key="frame" x="1500" y="0.0" width="750" height="128"/>
@@ -100,7 +126,6 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="J4U-tl-NiO" secondAttribute="trailing" id="Dmg-uY-YDT"/>
-                                            <constraint firstItem="J4U-tl-NiO" firstAttribute="top" secondItem="ZHF-de-hcV" secondAttribute="top" id="QVg-Aw-odh"/>
                                             <constraint firstAttribute="bottom" secondItem="J4U-tl-NiO" secondAttribute="bottom" id="T0w-oB-Jzs"/>
                                             <constraint firstItem="J4U-tl-NiO" firstAttribute="leading" secondItem="ZHF-de-hcV" secondAttribute="leading" id="vf6-7n-ec9"/>
                                         </constraints>
@@ -109,6 +134,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="tFN-hx-BY2" firstAttribute="bottom" secondItem="bZ6-0b-9fC" secondAttribute="top" id="Bxr-E7-xyF"/>
+                                    <constraint firstItem="J4U-tl-NiO" firstAttribute="top" secondItem="bZ6-0b-9fC" secondAttribute="top" id="EAq-Rb-K7o"/>
                                     <constraint firstItem="tFN-hx-BY2" firstAttribute="leading" secondItem="lRS-Eu-a54" secondAttribute="leading" constant="15" id="IS0-0x-pCC"/>
                                     <constraint firstItem="bZ6-0b-9fC" firstAttribute="bottom" secondItem="ZHF-de-hcV" secondAttribute="top" id="Pj4-eA-jgj"/>
                                     <constraint firstItem="ZHF-de-hcV" firstAttribute="top" secondItem="lRS-Eu-a54" secondAttribute="top" constant="30" id="QMd-vB-LN7"/>
@@ -147,6 +173,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+        <!--Discovery-->
+        <scene sceneID="Rwk-N8-Sym">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Discovery" id="Wm2-bh-09L" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kay-Hb-cHV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1631" y="623"/>
+        </scene>
+        <!--KakaoTV-->
+        <scene sceneID="vcp-P1-5TZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="KakaoTV" id="J3j-kK-QeC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tip-ug-E26" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-476" y="623"/>
         </scene>
     </scenes>
     <resources>

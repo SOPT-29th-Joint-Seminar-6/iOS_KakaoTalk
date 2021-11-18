@@ -1,24 +1,18 @@
 //
-//  ViewVC.swift
+//  DiscoveryVC.swift
 //  iOS_KakaoTalk
 //
-//  Created by Yi Joon Choi on 2021/11/13.
+//  Created by 김인환 on 2021/11/18.
 //
 
 import UIKit
 
-class ViewVC: UIViewController {
+class DiscoveryVC: UIViewController {
 
-    
-    @IBOutlet weak var scrollView: UIScrollView!
-
-    @IBOutlet weak var stackViewWidth: NSLayoutConstraint!
-    
-    let viewSizeWidth : CGFloat = UIScreen.main.bounds.width
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        stackViewWidth.constant = viewSizeWidth
+
+        // Do any additional setup after loading the view.
     }
     
 
