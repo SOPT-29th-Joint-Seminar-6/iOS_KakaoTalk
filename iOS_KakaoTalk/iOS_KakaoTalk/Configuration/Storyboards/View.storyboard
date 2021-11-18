@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,27 +22,35 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lRS-Eu-a54">
                                 <rect key="frame" x="0.0" y="685" width="3000" height="128"/>
                                 <subviews>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VfN-ci-fgJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="3000" height="28"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pil-45-AJZ">
-                                            <size key="itemSize" width="128" height="27"/>
-                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        </collectionViewFlowLayout>
-                                        <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Glh-2g-3d3">
-                                                <rect key="frame" x="0.0" y="0.0" width="128" height="27"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="BU6-qS-ZYm">
-                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="27"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </collectionViewCellContentView>
-                                                <size key="customSize" width="128" height="27"/>
-                                            </collectionViewCell>
-                                        </cells>
-                                    </collectionView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="tFN-hx-BY2">
+                                        <rect key="frame" x="15" y="0.0" width="2918" height="28"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="발견" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emg-sz-cRH">
+                                                <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                <color key="textColor" systemColor="systemGrayColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오TV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wb-6i-8QG">
+                                                <rect key="frame" x="933.5" y="0.0" width="60.5" height="28"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                <color key="textColor" systemColor="systemGrayColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="잔여백신" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVl-dx-Idh">
+                                                <rect key="frame" x="1900" y="0.0" width="55.5" height="28"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                <color key="textColor" systemColor="systemGrayColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="코로나19" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5k-bT-1EW">
+                                                <rect key="frame" x="2861" y="0.0" width="57" height="28"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                <color key="textColor" systemColor="systemGrayColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZ6-0b-9fC">
                                         <rect key="frame" x="0.0" y="28" width="3000" height="2"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -101,18 +108,18 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="VfN-ci-fgJ" firstAttribute="bottom" secondItem="bZ6-0b-9fC" secondAttribute="top" id="DOn-6r-6sx"/>
+                                    <constraint firstItem="tFN-hx-BY2" firstAttribute="bottom" secondItem="bZ6-0b-9fC" secondAttribute="top" id="Bxr-E7-xyF"/>
+                                    <constraint firstItem="tFN-hx-BY2" firstAttribute="leading" secondItem="lRS-Eu-a54" secondAttribute="leading" constant="15" id="IS0-0x-pCC"/>
                                     <constraint firstItem="bZ6-0b-9fC" firstAttribute="bottom" secondItem="ZHF-de-hcV" secondAttribute="top" id="Pj4-eA-jgj"/>
                                     <constraint firstItem="ZHF-de-hcV" firstAttribute="top" secondItem="lRS-Eu-a54" secondAttribute="top" constant="30" id="QMd-vB-LN7"/>
                                     <constraint firstAttribute="trailing" secondItem="ZHF-de-hcV" secondAttribute="trailing" id="b70-au-L8c"/>
                                     <constraint firstItem="J4U-tl-NiO" firstAttribute="height" secondItem="lRS-Eu-a54" secondAttribute="height" id="cZT-l0-bd5"/>
                                     <constraint firstAttribute="trailing" secondItem="bZ6-0b-9fC" secondAttribute="trailing" id="fkw-15-Ybj"/>
-                                    <constraint firstItem="VfN-ci-fgJ" firstAttribute="top" secondItem="lRS-Eu-a54" secondAttribute="top" id="h6e-kE-LA1"/>
                                     <constraint firstAttribute="bottom" secondItem="ZHF-de-hcV" secondAttribute="bottom" id="hbh-jH-Iy3"/>
-                                    <constraint firstItem="VfN-ci-fgJ" firstAttribute="leading" secondItem="lRS-Eu-a54" secondAttribute="leading" id="okZ-RK-0nV"/>
                                     <constraint firstItem="ZHF-de-hcV" firstAttribute="leading" secondItem="lRS-Eu-a54" secondAttribute="leading" id="pxt-up-huS"/>
+                                    <constraint firstAttribute="trailing" secondItem="tFN-hx-BY2" secondAttribute="trailing" constant="67" id="vQd-3c-mPq"/>
+                                    <constraint firstItem="tFN-hx-BY2" firstAttribute="top" secondItem="lRS-Eu-a54" secondAttribute="top" id="wPF-dA-dBB"/>
                                     <constraint firstItem="J4U-tl-NiO" firstAttribute="width" secondItem="lRS-Eu-a54" secondAttribute="width" priority="250" id="wTM-iN-jK8"/>
-                                    <constraint firstAttribute="trailing" secondItem="VfN-ci-fgJ" secondAttribute="trailing" id="xtT-be-lQy"/>
                                     <constraint firstItem="bZ6-0b-9fC" firstAttribute="leading" secondItem="lRS-Eu-a54" secondAttribute="leading" id="zlb-gb-kIa"/>
                                 </constraints>
                             </view>
@@ -133,7 +140,6 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="3000" height="896"/>
                     <connections>
-                        <outlet property="collectionView" destination="VfN-ci-fgJ" id="rQH-OM-X5W"/>
                         <outlet property="scrollView" destination="ZHF-de-hcV" id="4qJ-Fd-0kQ"/>
                         <outlet property="stackViewWidth" destination="kp5-j3-phu" id="SAP-cS-rcJ"/>
                     </connections>
@@ -154,6 +160,9 @@
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
