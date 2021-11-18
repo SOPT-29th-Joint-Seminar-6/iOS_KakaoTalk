@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190E7AD227469E1E00A7E292 /* CustomTabbarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 190E7AD127469E1E00A7E292 /* CustomTabbarCell.xib */; };
+		190E7AD42746A3C300A7E292 /* CustomTabbarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E7AD32746A3C300A7E292 /* CustomTabbarCell.swift */; };
 		19D4DA9727465EA600F3FECD /* KakaoTV.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D4DA9627465EA600F3FECD /* KakaoTV.storyboard */; };
 		19D4DA9927465EB200F3FECD /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D4DA9827465EB200F3FECD /* Discovery.storyboard */; };
 		19D4DA9B274662A800F3FECD /* KakaoTVVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4DA9A274662A800F3FECD /* KakaoTVVC.swift */; };
@@ -34,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		190E7AD127469E1E00A7E292 /* CustomTabbarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabbarCell.xib; sourceTree = "<group>"; };
+		190E7AD32746A3C300A7E292 /* CustomTabbarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarCell.swift; sourceTree = "<group>"; };
 		19D4DA9627465EA600F3FECD /* KakaoTV.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KakaoTV.storyboard; sourceTree = "<group>"; };
 		19D4DA9827465EB200F3FECD /* Discovery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
 		19D4DA9A274662A800F3FECD /* KakaoTVVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KakaoTVVC.swift; path = iOS_KakaoTalk/Sources/ViewController/KakaoTVVC.swift; sourceTree = SOURCE_ROOT; };
@@ -172,6 +176,7 @@
 				19D4DA9827465EB200F3FECD /* Discovery.storyboard */,
 				77349164273FA064009CA146 /* Shop.storyboard */,
 				77349166273FA092009CA146 /* Plus.storyboard */,
+				190E7AD127469E1E00A7E292 /* CustomTabbarCell.xib */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 		77349172273FA191009CA146 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				190E7AD32746A3C300A7E292 /* CustomTabbarCell.swift */,
 				77349173273FA1A5009CA146 /* Temp1.swift */,
 			);
 			path = Cell;
@@ -251,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				190E7AD227469E1E00A7E292 /* CustomTabbarCell.xib in Resources */,
 				77349165273FA064009CA146 /* Shop.storyboard in Resources */,
 				77349167273FA092009CA146 /* Plus.storyboard in Resources */,
 				7734915F273FA006009CA146 /* Friend.storyboard in Resources */,
@@ -278,6 +285,7 @@
 				19D4DA9B274662A800F3FECD /* KakaoTVVC.swift in Sources */,
 				7734916F273FA17F009CA146 /* ShopVC.swift in Sources */,
 				77349129273F9856009CA146 /* SceneDelegate.swift in Sources */,
+				190E7AD42746A3C300A7E292 /* CustomTabbarCell.swift in Sources */,
 				77349149273F9D6C009CA146 /* Token.swift in Sources */,
 				77349171273FA18B009CA146 /* PlusVC.swift in Sources */,
 				7734913E273F9C33009CA146 /* Constants.swift in Sources */,
