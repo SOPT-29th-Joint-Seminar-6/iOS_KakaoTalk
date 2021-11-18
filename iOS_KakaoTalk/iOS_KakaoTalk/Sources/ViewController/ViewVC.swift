@@ -9,10 +9,16 @@ import UIKit
 
 class ViewVC: UIViewController {
 
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var scrollView: UIScrollView!
+
+    @IBOutlet weak var stackViewWidth: NSLayoutConstraint!
+    
+    let viewSizeWidth : CGFloat = UIScreen.main.bounds.width
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        stackViewWidth.constant = viewSizeWidth
     }
     
 
