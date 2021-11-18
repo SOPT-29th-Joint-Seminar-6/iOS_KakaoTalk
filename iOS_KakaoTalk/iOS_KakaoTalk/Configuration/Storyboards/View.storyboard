@@ -24,25 +24,33 @@
                                 <rect key="frame" x="0.0" y="685" width="3000" height="128"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VfN-ci-fgJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="3000" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="3000" height="28"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pil-45-AJZ">
-                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="itemSize" width="128" height="27"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Glh-2g-3d3">
-                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="27"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="BU6-qS-ZYm">
-                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="27"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </collectionViewCellContentView>
+                                                <size key="customSize" width="128" height="27"/>
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZ6-0b-9fC">
+                                        <rect key="frame" x="0.0" y="28" width="3000" height="2"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="tfT-Nd-uiM"/>
+                                        </constraints>
+                                    </view>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZHF-de-hcV">
                                         <rect key="frame" x="0.0" y="30" width="3000" height="98"/>
                                         <subviews>
@@ -93,16 +101,19 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="VfN-ci-fgJ" firstAttribute="bottom" secondItem="bZ6-0b-9fC" secondAttribute="top" id="DOn-6r-6sx"/>
+                                    <constraint firstItem="bZ6-0b-9fC" firstAttribute="bottom" secondItem="ZHF-de-hcV" secondAttribute="top" id="Pj4-eA-jgj"/>
                                     <constraint firstItem="ZHF-de-hcV" firstAttribute="top" secondItem="lRS-Eu-a54" secondAttribute="top" constant="30" id="QMd-vB-LN7"/>
                                     <constraint firstAttribute="trailing" secondItem="ZHF-de-hcV" secondAttribute="trailing" id="b70-au-L8c"/>
                                     <constraint firstItem="J4U-tl-NiO" firstAttribute="height" secondItem="lRS-Eu-a54" secondAttribute="height" id="cZT-l0-bd5"/>
+                                    <constraint firstAttribute="trailing" secondItem="bZ6-0b-9fC" secondAttribute="trailing" id="fkw-15-Ybj"/>
                                     <constraint firstItem="VfN-ci-fgJ" firstAttribute="top" secondItem="lRS-Eu-a54" secondAttribute="top" id="h6e-kE-LA1"/>
                                     <constraint firstAttribute="bottom" secondItem="ZHF-de-hcV" secondAttribute="bottom" id="hbh-jH-Iy3"/>
                                     <constraint firstItem="VfN-ci-fgJ" firstAttribute="leading" secondItem="lRS-Eu-a54" secondAttribute="leading" id="okZ-RK-0nV"/>
-                                    <constraint firstItem="VfN-ci-fgJ" firstAttribute="bottom" secondItem="ZHF-de-hcV" secondAttribute="top" id="pF0-57-fdL"/>
                                     <constraint firstItem="ZHF-de-hcV" firstAttribute="leading" secondItem="lRS-Eu-a54" secondAttribute="leading" id="pxt-up-huS"/>
                                     <constraint firstItem="J4U-tl-NiO" firstAttribute="width" secondItem="lRS-Eu-a54" secondAttribute="width" priority="250" id="wTM-iN-jK8"/>
                                     <constraint firstAttribute="trailing" secondItem="VfN-ci-fgJ" secondAttribute="trailing" id="xtT-be-lQy"/>
+                                    <constraint firstItem="bZ6-0b-9fC" firstAttribute="leading" secondItem="lRS-Eu-a54" secondAttribute="leading" id="zlb-gb-kIa"/>
                                 </constraints>
                             </view>
                         </subviews>
