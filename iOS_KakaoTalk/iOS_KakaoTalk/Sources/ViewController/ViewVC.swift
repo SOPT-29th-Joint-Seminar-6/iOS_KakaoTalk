@@ -22,7 +22,7 @@ class ViewVC: UIViewController {
     @IBOutlet weak var indicatorLineWidth: NSLayoutConstraint!
     @IBOutlet weak var indicatorLineLeading: NSLayoutConstraint!
     
-    // MARK: -
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,7 +33,7 @@ class ViewVC: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        adjustIndicatorLineForTabbarCell(at: scrollView.contentOffset.x)
+        adjustCustomTabbarForTabbarCell(at: scrollView.contentOffset.x)
     }
     
     func setCustomTabbarCollectionView() {
@@ -52,6 +52,7 @@ class ViewVC: UIViewController {
     
 }
 
+// MARK: - Extensions
 extension ViewVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4
@@ -65,13 +66,13 @@ extension ViewVC: UICollectionViewDataSource {
         return cell
     }
     
-    private func adjustIndicatorLineForTabbarCell(at Offset: CGFloat) {
-        let nowScrollOffset = Offset / viewSizeWidth
-//
-        guard let leftTabbarCell = customTabbarCollectionView.cellForItem(at: IndexPath(item: Int(nowScrollOffset), section: 0)),
-        let rightTabbarCell = customTabbarCollectionView.cellForItem(at: IndexPath(item: Int(nowScrollOffset) + 1, section: 0)) else { return }
+    private func adjustCustomTabbarForTabbarCell(at Offset: CGFloat) {
+        let currentScrollOffset = Offset / viewSizeWidth
 
-        let progressPercentage = nowScrollOffset - CGFloat(Int(nowScrollOffset))
+        guard let leftTabbarCell = customTabbarCollectionView.cellForItem(at: IndexPath(item: Int(currentScrollOffset), section: 0)) as? CustomTabbarCell,
+        let rightTabbarCell = customTabbarCollectionView.cellForItem(at: IndexPath(item: Int(currentScrollOffset) + 1, section: 0)) as? CustomTabbarCell else { return }
+
+        let progressPercentage = currentScrollOffset - CGFloat(Int(currentScrollOffset))
 
         let leftTabbarCellWidth = leftTabbarCell.frame.width
         let rightTabbarCellWidth = rightTabbarCell.frame.width
@@ -84,12 +85,28 @@ extension ViewVC: UICollectionViewDataSource {
 
         indicatorLineLeading.constant = indicatorX + customTabbarCollectionView.frame.origin.x
         indicatorLineWidth.constant = indicatorWidth
+        
+//        let currentLeftCellColor = leftTabbarCell.tabLabel.textColor
+//        let currentRightCellColor = rightTabbarCell.tabLabel.textColor
+//        
+//        var currentHue: CGFloat = CGFloat.zero
+//        var currentSaturation: CGFloat = CGFloat.zero
+//        var currentBrightness: CGFloat = CGFloat.zero
+//        var currentAlpha: CGFloat = CGFloat.zero
+//        currentLeftCellColor?.getHue(&currentHue, saturation: &currentSaturation, brightness: &currentBrightness, alpha: &currentAlpha)
+//        
+//        let computedBlack = UIColor(hue: currentHue, saturation: currentSaturation, brightness: currentBrightness * (1 - progressPercentage), alpha: currentAlpha)
+//        let computedGray = UIColor(hue: currentHue, saturation: currentSaturation, brightness: currentBrightness * progressPercentage, alpha: currentAlpha)
+//        
+//        rightTabbarCell.tabLabel.textColor = computedBlack
+//        leftTabbarCell.tabLabel.textColor = computedGray
     }
     
 }
 
 extension ViewVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        setCurrentCustomTabLabelColor(at: indexPath)
         switch indexPath.item {
         case 0:
             scrollView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
@@ -103,11 +120,19 @@ extension ViewVC: UICollectionViewDelegate {
             break
         }
     }
+    
+    private func setCurrentCustomTabLabelColor(at indexPath: IndexPath) {
+        guard let currentCell: CustomTabbarCell = customTabbarCollectionView.cellForItem(at: indexPath) as? CustomTabbarCell else { return }
+        customTabbarCollectionView.visibleCells.forEach({(collectionCell) in
+            guard let cell: CustomTabbarCell = collectionCell as? CustomTabbarCell else { return }
+            cell.tabLabel.textColor = UIColor.systemGray
+        })
+        currentCell.tabLabel.textColor = UIColor.black
+    }
 }
 
 extension ViewVC: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        print("asdasdasd")
-        adjustIndicatorLineForTabbarCell(at: scrollView.contentOffset.x)
+        adjustCustomTabbarForTabbarCell(at: scrollView.contentOffset.x)
     }
 }
