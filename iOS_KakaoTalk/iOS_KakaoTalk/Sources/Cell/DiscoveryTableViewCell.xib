@@ -71,14 +71,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhI-Lj-ZJm">
-                                <rect key="frame" x="16" y="191.5" width="31.5" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhI-Lj-ZJm">
+                                <rect key="frame" x="16" y="191.5" width="151" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="m1U-4M-ONL"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbD-SX-Jb8">
-                                <rect key="frame" x="180" y="191.5" width="31.5" height="17"/>
+                                <rect key="frame" x="180" y="191.5" width="153" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="YQj-8O-F5o"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -180,8 +186,11 @@
                 <outlet property="channelDescLabel" destination="gAC-ZP-fbB" id="GDL-SO-xWm"/>
                 <outlet property="channelNameLabel" destination="kDe-Ra-Qtw" id="qOn-UI-ZnN"/>
                 <outlet property="dateLabel" destination="YVw-qD-k8t" id="jq9-IB-Kbk"/>
+                <outlet property="firstAuthorLabel" destination="FQn-Gg-N2d" id="EBq-gB-IKJ"/>
                 <outlet property="firstDescLabel" destination="HhI-Lj-ZJm" id="UqT-uB-h7e"/>
                 <outlet property="firstImageView" destination="Mgi-WI-Uw7" id="aTX-WT-uiq"/>
+                <outlet property="icon" destination="N6a-FR-Q6j" id="Dbu-hC-odj"/>
+                <outlet property="secondAuthorLabel" destination="sB3-tH-bO3" id="uGb-mx-hhX"/>
                 <outlet property="secondDescLabel" destination="BbD-SX-Jb8" id="c8L-YR-Eoo"/>
                 <outlet property="secondImageView" destination="fTk-jI-hKb" id="m2t-BA-qa0"/>
             </connections>
