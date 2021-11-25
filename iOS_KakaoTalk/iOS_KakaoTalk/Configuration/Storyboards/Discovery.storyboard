@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDT-fR-UNj">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1300"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5br-ct-XiJ">
                                                 <rect key="frame" x="10" y="15" width="374" height="74"/>
@@ -84,7 +84,7 @@
                                                 </constraints>
                                             </stackView>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bo8-FX-HNS">
-                                                <rect key="frame" x="13" y="109" width="388" height="1191"/>
+                                                <rect key="frame" x="13" y="109" width="388" height="1091"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </tableView>
                                         </subviews>
@@ -97,7 +97,7 @@
                                             <constraint firstItem="5br-ct-XiJ" firstAttribute="leading" secondItem="cDT-fR-UNj" secondAttribute="leading" constant="10" id="c79-S6-lwj"/>
                                             <constraint firstItem="Bo8-FX-HNS" firstAttribute="top" secondItem="5br-ct-XiJ" secondAttribute="bottom" constant="20" id="ldW-j6-Yay"/>
                                             <constraint firstItem="Bo8-FX-HNS" firstAttribute="leading" secondItem="cDT-fR-UNj" secondAttribute="leading" constant="13" id="qu7-oQ-uVA"/>
-                                            <constraint firstAttribute="height" priority="250" constant="1300" id="tMV-mO-rIa"/>
+                                            <constraint firstAttribute="height" priority="250" constant="1200" id="tMV-mO-rIa"/>
                                         </constraints>
                                     </view>
                                 </subviews>
