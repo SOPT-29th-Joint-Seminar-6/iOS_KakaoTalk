@@ -32,7 +32,8 @@
 		7734916D273FA176009CA146 /* ViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7734916C273FA176009CA146 /* ViewVC.swift */; };
 		7734916F273FA17F009CA146 /* ShopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7734916E273FA17F009CA146 /* ShopVC.swift */; };
 		77349171273FA18B009CA146 /* PlusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77349170273FA18B009CA146 /* PlusVC.swift */; };
-		77349174273FA1A5009CA146 /* Temp1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77349173273FA1A5009CA146 /* Temp1.swift */; };
+		7770315E27501D61002CBD19 /* DiscoveryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7770315C27501D61002CBD19 /* DiscoveryTableViewCell.swift */; };
+		7770315F27501D61002CBD19 /* DiscoveryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7770315D27501D61002CBD19 /* DiscoveryTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +64,8 @@
 		7734916C273FA176009CA146 /* ViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewVC.swift; sourceTree = "<group>"; };
 		7734916E273FA17F009CA146 /* ShopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopVC.swift; sourceTree = "<group>"; };
 		77349170273FA18B009CA146 /* PlusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusVC.swift; sourceTree = "<group>"; };
-		77349173273FA1A5009CA146 /* Temp1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temp1.swift; sourceTree = "<group>"; };
+		7770315C27501D61002CBD19 /* DiscoveryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryTableViewCell.swift; sourceTree = "<group>"; };
+		7770315D27501D61002CBD19 /* DiscoveryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoveryTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				190E7AD32746A3C300A7E292 /* CustomTabbarCell.swift */,
-				77349173273FA1A5009CA146 /* Temp1.swift */,
+				7770315C27501D61002CBD19 /* DiscoveryTableViewCell.swift */,
+				7770315D27501D61002CBD19 /* DiscoveryTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				77349130273F9859009CA146 /* Assets.xcassets in Resources */,
 				77349161273FA012009CA146 /* Chatting.storyboard in Resources */,
 				77349163273FA01C009CA146 /* View.storyboard in Resources */,
+				7770315F27501D61002CBD19 /* DiscoveryTableViewCell.xib in Resources */,
 				7734915D273F9F25009CA146 /* BaseTabBar.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +295,7 @@
 				7734913E273F9C33009CA146 /* Constants.swift in Sources */,
 				7734916B273FA166009CA146 /* ChattingVC.swift in Sources */,
 				19D4DA9D274662BA00F3FECD /* DiscoveryVC.swift in Sources */,
-				77349174273FA1A5009CA146 /* Temp1.swift in Sources */,
+				7770315E27501D61002CBD19 /* DiscoveryTableViewCell.swift in Sources */,
 				77349142273F9C60009CA146 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
