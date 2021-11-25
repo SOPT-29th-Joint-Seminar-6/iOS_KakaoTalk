@@ -8,6 +8,14 @@
 import UIKit
 
 extension UIColor {
+    static var systemGrayBrightness: CGFloat {
+        let grayColor: UIColor = UIColor.systemGray
+        var brightness: CGFloat = CGFloat.zero
+
+        grayColor.getHue(nil, saturation: nil, brightness: &brightness, alpha: nil)
+        return brightness
+    }
+    
     convenience init(red: Int, green: Int, blue: Int, a: Int = 0xFF) {
         self.init(
             red: CGFloat(red) / 255.0,
@@ -51,4 +59,3 @@ internal extension UIColor {
         return UIColor(rgb: 0xEA6039)
     }
 }
-
