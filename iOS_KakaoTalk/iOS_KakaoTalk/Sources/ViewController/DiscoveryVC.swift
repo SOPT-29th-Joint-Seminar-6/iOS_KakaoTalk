@@ -42,6 +42,9 @@ class DiscoveryVC: UIViewController {
         data.append(ChannelResponse(Icon: UIImage(named: "imgNewspaper")!, ChannelName: "경기연합신문", ChannelDesc: "백신 접종 이상 반응... 치료제가 답인가?",
                                     Date: "19시간 전", firstImage: UIImage(named: "imgVaccin")!, firstDesc: "광주교도소 20대 재소자, 모더나 접종 이틀 후 사망",
                                     firstAuthor: "경기연합신문", secondImage: UIImage(named: "imgModuna")!, secondDesc: "모더나 맞고 물 한 모금 못 마시고 초록물 토하는 50대 남성..", secondAuthor: "경기연합신문"))
+        data.append(ChannelResponse(Icon: UIImage(named: "imgNewspaper")!, ChannelName: "경기연합신문", ChannelDesc: "백신 접종 이상 반응... 치료제가 답인가?",
+                                    Date: "19시간 전", firstImage: UIImage(named: "imgVaccin")!, firstDesc: "광주교도소 20대 재소자, 모더나 접종 이틀 후 사망",
+                                    firstAuthor: "경기연합신문", secondImage: UIImage(named: "imgModuna")!, secondDesc: "모더나 맞고 물 한 모금 못 마시고 초록물 토하는 50대 남성..", secondAuthor: "경기연합신문"))
     }
 }
 
@@ -61,7 +64,7 @@ extension DiscoveryVC : UITableViewDataSource{
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return data.count
     }
     
     

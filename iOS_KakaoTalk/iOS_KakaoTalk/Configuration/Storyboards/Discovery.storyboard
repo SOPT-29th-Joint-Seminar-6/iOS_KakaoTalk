@@ -20,17 +20,71 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDT-fR-UNj">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1300"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5br-ct-XiJ">
-                                                <rect key="frame" x="10" y="15" width="361" height="74"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5br-ct-XiJ">
+                                                <rect key="frame" x="10" y="15" width="374" height="74"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kE6-OY-w6s">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="37"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48k-u7-uHb">
+                                                                <rect key="frame" x="0.0" y="0.0" width="82" height="37"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="btnDiscoveryTag1Unselected"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5Y-By-7PS">
+                                                                <rect key="frame" x="107.5" y="0.0" width="91" height="37"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="btnDiscoveryTag2Selected"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRD-XX-3C3">
+                                                                <rect key="frame" x="223.5" y="0.0" width="69" height="37"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="btnDiscoveryTag3Unselected"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3x-81-bhP">
+                                                                <rect key="frame" x="318" y="0.0" width="56" height="37"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="btnTvTag4Unselected"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="IoJ-W4-0pv">
+                                                        <rect key="frame" x="0.0" y="37" width="374" height="37"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kv8-M5-6Lb">
+                                                                <rect key="frame" x="0.0" y="0.0" width="56" height="37"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="btnDiscoveryTag5Unselected"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQe-gy-RBh">
+                                                                <rect key="frame" x="83.5" y="0.0" width="119" height="37"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="btnDiscoveryTag6Unselected"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bb2-7B-PxV">
+                                                                <rect key="frame" x="229.5" y="0.0" width="60" height="37"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="btnDiscoveryTag7Unselected"/>
+                                                            </button>
+                                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6N-DI-TD9">
+                                                                <rect key="frame" x="317" y="0.0" width="57" height="37"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="BUtton">
+                                                                    <color key="titleColor" systemColor="systemGray6Color"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="74" id="aL4-yj-f0A"/>
                                                 </constraints>
                                             </stackView>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bo8-FX-HNS">
-                                                <rect key="frame" x="13" y="109" width="388" height="1391"/>
+                                                <rect key="frame" x="13" y="109" width="388" height="1191"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </tableView>
                                         </subviews>
@@ -39,11 +93,11 @@
                                             <constraint firstAttribute="bottom" secondItem="Bo8-FX-HNS" secondAttribute="bottom" id="9Qq-zu-15s"/>
                                             <constraint firstItem="Bo8-FX-HNS" firstAttribute="centerX" secondItem="cDT-fR-UNj" secondAttribute="centerX" id="DgH-0W-N7u"/>
                                             <constraint firstItem="5br-ct-XiJ" firstAttribute="top" secondItem="cDT-fR-UNj" secondAttribute="top" constant="15" id="HBL-76-VXf"/>
-                                            <constraint firstAttribute="trailing" secondItem="5br-ct-XiJ" secondAttribute="trailing" constant="43" id="Hb0-bS-yiT"/>
+                                            <constraint firstAttribute="trailing" secondItem="5br-ct-XiJ" secondAttribute="trailing" constant="30" id="Hb0-bS-yiT"/>
                                             <constraint firstItem="5br-ct-XiJ" firstAttribute="leading" secondItem="cDT-fR-UNj" secondAttribute="leading" constant="10" id="c79-S6-lwj"/>
                                             <constraint firstItem="Bo8-FX-HNS" firstAttribute="top" secondItem="5br-ct-XiJ" secondAttribute="bottom" constant="20" id="ldW-j6-Yay"/>
                                             <constraint firstItem="Bo8-FX-HNS" firstAttribute="leading" secondItem="cDT-fR-UNj" secondAttribute="leading" constant="13" id="qu7-oQ-uVA"/>
-                                            <constraint firstAttribute="height" priority="250" constant="1500" id="tMV-mO-rIa"/>
+                                            <constraint firstAttribute="height" priority="250" constant="1300" id="tMV-mO-rIa"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -76,6 +130,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="btnDiscoveryTag1Unselected" width="82" height="32"/>
+        <image name="btnDiscoveryTag2Selected" width="91" height="32"/>
+        <image name="btnDiscoveryTag3Unselected" width="69" height="32"/>
+        <image name="btnDiscoveryTag5Unselected" width="56" height="32"/>
+        <image name="btnDiscoveryTag6Unselected" width="119" height="32"/>
+        <image name="btnDiscoveryTag7Unselected" width="60" height="32"/>
+        <image name="btnTvTag4Unselected" width="56" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
