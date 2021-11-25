@@ -22,11 +22,11 @@ class DiscoveryVC: UIViewController {
 
     private func setUI(){
         if #available(iOS 15, *) {
-            newsTableView.sectionHeaderTopPadding = 1
+            newsTableView.sectionHeaderTopPadding = 0
         }
         newsTableView.delegate = self
         newsTableView.dataSource = self
-        newsTableView.backgroundColor = .lightGray
+        newsTableView.backgroundColor = .systemGray6
         newsTableView.layer.cornerRadius = 8
     }
     
@@ -56,7 +56,7 @@ extension DiscoveryVC : UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView()
-        headerView.backgroundColor = .systemBrown
+        headerView.backgroundColor = .systemGray6
         return headerView
     }
     
