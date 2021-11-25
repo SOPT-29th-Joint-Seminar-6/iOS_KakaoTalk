@@ -9,21 +9,39 @@ import UIKit
 
 class DiscoveryVC: UIViewController {
 
+    @IBOutlet weak var newsTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUI()
+        registerXib()
+    }
 
-        // Do any additional setup after loading the view.
+    private func setUI(){
+        newsTableView.delegate = self
+        newsTableView.dataSource = self
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func registerXib(){
+        newsTableView.register(DiscoveryTableViewCell.nib(), forCellReuseIdentifier: Const.Xib.discoveryTableViewCell)
     }
-    */
+}
 
+extension DiscoveryVC : UITableViewDelegate{
+    
+}
+
+extension DiscoveryVC : UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let newsCell = tableView.dequeueReusableCell(withIdentifier: Const.Xib.discoveryTableViewCell, for: indexPath) as? DiscoveryTableViewCell else {
+            return UITableViewCell()
+        }
+        return newsCell
+    }
+    
+    
 }

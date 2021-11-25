@@ -20,4 +20,8 @@ class DiscoveryTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    static func nib() -> UINib {
+        return UINib(nibName: "DiscoveryTableViewCell", bundle: Bundle(for: DiscoveryTableViewCell.self))
+    }
+    
 }

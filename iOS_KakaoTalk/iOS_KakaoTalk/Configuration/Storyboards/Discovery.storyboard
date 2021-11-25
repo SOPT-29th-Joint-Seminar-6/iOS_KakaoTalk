@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,84 +14,62 @@
             <objects>
                 <viewController storyboardIdentifier="DiscoveryVC" id="Y6W-OH-hqX" customClass="DiscoveryVC" customModule="iOS_KakaoTalk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="pvY-Bk-qsO">
-                                <rect key="frame" x="10" y="15" width="361" height="74"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n9v-s6-AQm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="3rm-Ak-qAM">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="28"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDT-fR-UNj">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7P-Bp-3b0">
-                                                <rect key="frame" x="0.0" y="0.0" width="82" height="28"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="btnDiscoveryTag1Unselected"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSX-1b-AUO">
-                                                <rect key="frame" x="82" y="0.0" width="115" height="28"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="btnDiscoveryTag2Selected"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQD-sB-6rZ">
-                                                <rect key="frame" x="197" y="0.0" width="84" height="28"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="btnDiscoveryTag3Unselected"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rb2-NH-7Z0">
-                                                <rect key="frame" x="281" y="0.0" width="80" height="28"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="btnTvTag4Unselected"/>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5br-ct-XiJ">
+                                                <rect key="frame" x="10" y="15" width="361" height="74"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="74" id="aL4-yj-f0A"/>
+                                                </constraints>
+                                            </stackView>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bo8-FX-HNS">
+                                                <rect key="frame" x="13" y="109" width="388" height="704"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </tableView>
                                         </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="4ZJ-ON-6Yx">
-                                        <rect key="frame" x="0.0" y="28" width="361" height="46"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wC3-cr-u0k">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="46"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="btnDiscoveryTag5Unselected"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZz-lC-kNV">
-                                                <rect key="frame" x="80" y="0.0" width="143" height="46"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="btnDiscoveryTag6Unselected"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Avf-ce-i9X">
-                                                <rect key="frame" x="223" y="0.0" width="54" height="46"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="btnDiscoveryTag7Unselected"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2em-ge-wg1">
-                                                <rect key="frame" x="277" y="0.0" width="84" height="46"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="btnDiscoveryTag7Unselected"/>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Bo8-FX-HNS" secondAttribute="bottom" id="9Qq-zu-15s"/>
+                                            <constraint firstItem="Bo8-FX-HNS" firstAttribute="centerX" secondItem="cDT-fR-UNj" secondAttribute="centerX" id="DgH-0W-N7u"/>
+                                            <constraint firstItem="5br-ct-XiJ" firstAttribute="top" secondItem="cDT-fR-UNj" secondAttribute="top" constant="15" id="HBL-76-VXf"/>
+                                            <constraint firstAttribute="trailing" secondItem="5br-ct-XiJ" secondAttribute="trailing" constant="43" id="Hb0-bS-yiT"/>
+                                            <constraint firstItem="5br-ct-XiJ" firstAttribute="leading" secondItem="cDT-fR-UNj" secondAttribute="leading" constant="10" id="c79-S6-lwj"/>
+                                            <constraint firstItem="Bo8-FX-HNS" firstAttribute="top" secondItem="5br-ct-XiJ" secondAttribute="bottom" constant="20" id="ldW-j6-Yay"/>
+                                            <constraint firstItem="Bo8-FX-HNS" firstAttribute="leading" secondItem="cDT-fR-UNj" secondAttribute="leading" constant="13" id="qu7-oQ-uVA"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="74" id="fib-wU-thd"/>
+                                    <constraint firstAttribute="bottom" secondItem="cDT-fR-UNj" secondAttribute="bottom" id="2aF-uS-f50"/>
+                                    <constraint firstItem="cDT-fR-UNj" firstAttribute="top" secondItem="n9v-s6-AQm" secondAttribute="top" id="7Rw-yr-AtO"/>
+                                    <constraint firstItem="cDT-fR-UNj" firstAttribute="leading" secondItem="n9v-s6-AQm" secondAttribute="leading" id="brA-Ih-iyL"/>
+                                    <constraint firstAttribute="trailing" secondItem="cDT-fR-UNj" secondAttribute="trailing" id="ghd-nI-udc"/>
                                 </constraints>
-                            </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aQo-DM-XAA">
-                                <rect key="frame" x="13" y="89" width="388" height="807"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
-                            <constraint firstItem="aQo-DM-XAA" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="BZx-JO-v5A"/>
-                            <constraint firstItem="pvY-Bk-qsO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="QLk-gh-iCa"/>
-                            <constraint firstItem="aQo-DM-XAA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="13" id="XRM-rM-LFv"/>
-                            <constraint firstAttribute="trailing" secondItem="pvY-Bk-qsO" secondAttribute="trailing" constant="43" id="fPJ-s1-kc0"/>
-                            <constraint firstAttribute="bottom" secondItem="aQo-DM-XAA" secondAttribute="bottom" id="uPi-15-RST"/>
-                            <constraint firstItem="pvY-Bk-qsO" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="15" id="xHO-bH-sxg"/>
-                            <constraint firstItem="aQo-DM-XAA" firstAttribute="top" secondItem="pvY-Bk-qsO" secondAttribute="bottom" id="xqs-L5-8Hf"/>
+                            <constraint firstItem="n9v-s6-AQm" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="PB3-5b-uHh"/>
+                            <constraint firstItem="n9v-s6-AQm" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="c0h-Jk-cuY"/>
+                            <constraint firstItem="cDT-fR-UNj" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="geR-n7-nn2"/>
+                            <constraint firstItem="n9v-s6-AQm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="mRW-F8-Uk3"/>
+                            <constraint firstItem="n9v-s6-AQm" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="nER-Va-X1C"/>
+                            <constraint firstItem="cDT-fR-UNj" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" priority="250" id="y1h-vW-hGA"/>
                         </constraints>
                     </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="newsTableView" destination="Bo8-FX-HNS" id="Joh-DR-hbv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -98,15 +77,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="btnDiscoveryTag1Unselected" width="82" height="32"/>
-        <image name="btnDiscoveryTag2Selected" width="91" height="32"/>
-        <image name="btnDiscoveryTag3Unselected" width="69" height="32"/>
-        <image name="btnDiscoveryTag5Unselected" width="56" height="32"/>
-        <image name="btnDiscoveryTag6Unselected" width="119" height="32"/>
-        <image name="btnDiscoveryTag7Unselected" width="60" height="32"/>
-        <image name="btnTvTag4Unselected" width="56" height="32"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
