@@ -15,6 +15,8 @@ struct ChannelResponse{
     var Date : String
     var firstImage : UIImage
     var firstDesc : String
+    var firstAuthor : String
     var secondImage : UIImage
     var secondDesc : String
+    var secondAuthor : String
 }

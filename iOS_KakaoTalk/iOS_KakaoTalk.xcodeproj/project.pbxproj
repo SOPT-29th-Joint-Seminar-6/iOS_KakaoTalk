@@ -35,6 +35,8 @@
 		7770315E27501D61002CBD19 /* DiscoveryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7770315C27501D61002CBD19 /* DiscoveryTableViewCell.swift */; };
 		7770315F27501D61002CBD19 /* DiscoveryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7770315D27501D61002CBD19 /* DiscoveryTableViewCell.xib */; };
 		7770316227503C32002CBD19 /* ChannelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7770316127503C32002CBD19 /* ChannelResponse.swift */; };
+		7770316527504387002CBD19 /* DiscoverySecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7770316327504387002CBD19 /* DiscoverySecondTableViewCell.swift */; };
+		7770316627504387002CBD19 /* DiscoverySecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7770316427504387002CBD19 /* DiscoverySecondTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		7770315C27501D61002CBD19 /* DiscoveryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryTableViewCell.swift; sourceTree = "<group>"; };
 		7770315D27501D61002CBD19 /* DiscoveryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoveryTableViewCell.xib; sourceTree = "<group>"; };
 		7770316127503C32002CBD19 /* ChannelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelResponse.swift; sourceTree = "<group>"; };
+		7770316327504387002CBD19 /* DiscoverySecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverySecondTableViewCell.swift; sourceTree = "<group>"; };
+		7770316427504387002CBD19 /* DiscoverySecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverySecondTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +196,8 @@
 				190E7AD32746A3C300A7E292 /* CustomTabbarCell.swift */,
 				7770315C27501D61002CBD19 /* DiscoveryTableViewCell.swift */,
 				7770315D27501D61002CBD19 /* DiscoveryTableViewCell.xib */,
+				7770316327504387002CBD19 /* DiscoverySecondTableViewCell.swift */,
+				7770316427504387002CBD19 /* DiscoverySecondTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -271,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7770316627504387002CBD19 /* DiscoverySecondTableViewCell.xib in Resources */,
 				190E7AD227469E1E00A7E292 /* CustomTabbarCell.xib in Resources */,
 				77349165273FA064009CA146 /* Shop.storyboard in Resources */,
 				77349167273FA092009CA146 /* Plus.storyboard in Resources */,
@@ -298,6 +305,7 @@
 				77349169273FA158009CA146 /* FriendVC.swift in Sources */,
 				77349127273F9856009CA146 /* AppDelegate.swift in Sources */,
 				19D4DA9B274662A800F3FECD /* KakaoTVVC.swift in Sources */,
+				7770316527504387002CBD19 /* DiscoverySecondTableViewCell.swift in Sources */,
 				7734916F273FA17F009CA146 /* ShopVC.swift in Sources */,
 				77349129273F9856009CA146 /* SceneDelegate.swift in Sources */,
 				190E7AD42746A3C300A7E292 /* CustomTabbarCell.swift in Sources */,

@@ -18,5 +18,6 @@ extension Const {
     
     struct Xib {
         static let discoveryTableViewCell = "DiscoveryTableViewCell"
+        static let discoverySecondTableViewCell = "DiscoverySecondTableViewCell"
     }
 }

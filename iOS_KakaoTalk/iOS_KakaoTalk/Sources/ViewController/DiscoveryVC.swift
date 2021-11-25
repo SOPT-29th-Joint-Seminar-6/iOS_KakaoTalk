@@ -32,11 +32,16 @@ class DiscoveryVC: UIViewController {
     
     private func registerXib(){
         newsTableView.register(DiscoveryTableViewCell.nib(), forCellReuseIdentifier: Const.Xib.discoveryTableViewCell)
+        newsTableView.register(DiscoverySecondTableViewCell.nib(), forCellReuseIdentifier: Const.Xib.discoverySecondTableViewCell)
     }
     
     private func initData(){
-        data.append(ChannelResponse(Icon: UIImage(named: "icMovie")!, ChannelName: "오늘의 영화계 소식", ChannelDesc: "영화계 이모저모를 모아봤습니다.", Date: "2시간 전", firstImage: UIImage(named: "imgMovie1")!, firstDesc: "유아인X이재인X안재홍X라미란X김희원, 초능력 갖...", secondImage: UIImage(named: "imgMovie2")!, secondDesc: "김혜수, 28회째 청룡영화상진행... 유연석과 4년 연속..."))
-        data.append(ChannelResponse(Icon: UIImage(named: "icMovie")!, ChannelName: "오늘의 영화계 소식", ChannelDesc: "영화계 이모저모를 모아봤습니다.", Date: "2시간 전", firstImage: UIImage(named: "imgMovie1")!, firstDesc: "유아인X이재인X안재홍X라미란X김희원, 초능력 갖...", secondImage: UIImage(named: "imgMovie2")!, secondDesc: "김혜수, 28회째 청룡영화상진행... 유연석과 4년 연속..."))
+        data.append(ChannelResponse(Icon: UIImage(named: "icMovie")!, ChannelName: "오늘의 영화계 소식", ChannelDesc: "영화계 이모저모를 모아봤습니다.",
+                                    Date: "2시간 전", firstImage: UIImage(named: "imgMovie1")!, firstDesc: "유아인X이재인X안재홍X라미란X김희원, 초능력 갖...",
+                                    firstAuthor: "", secondImage: UIImage(named: "imgMovie2")!, secondDesc: "김혜수, 28회째 청룡영화상진행... 유연석과 4년 연속...", secondAuthor: ""))
+        data.append(ChannelResponse(Icon: UIImage(named: "imgNewspaper")!, ChannelName: "경기연합신문", ChannelDesc: "백신 접종 이상 반응... 치료제가 답인가?",
+                                    Date: "19시간 전", firstImage: UIImage(named: "imgVaccin")!, firstDesc: "광주교도소 20대 재소자, 모더나 접종 이틀 후 사망",
+                                    firstAuthor: "경기연합신문", secondImage: UIImage(named: "imgModuna")!, secondDesc: "모더나 맞고 물 한 모금 못 마시고 초록물 토하는 50대 남성..", secondAuthor: "경기연합신문"))
     }
 }
 
@@ -77,6 +82,7 @@ extension DiscoveryVC : UITableViewDataSource{
         
         switch indexPath.section{
         case 0:
+            
             guard let newsCell = tableView.dequeueReusableCell(withIdentifier: Const.Xib.discoveryTableViewCell, for: indexPath) as? DiscoveryTableViewCell else {
                 return UITableViewCell()
             }
@@ -92,9 +98,20 @@ extension DiscoveryVC : UITableViewDataSource{
             
             return newsCell
         default:
-            guard let newsCell = tableView.dequeueReusableCell(withIdentifier: Const.Xib.discoveryTableViewCell, for: indexPath) as? DiscoveryTableViewCell else {
+            guard let newsCell = tableView.dequeueReusableCell(withIdentifier: Const.Xib.discoverySecondTableViewCell, for: indexPath) as? DiscoverySecondTableViewCell else {
                 return UITableViewCell()
             }
+            
+            newsCell.icon.image = data[indexPath.section].Icon
+            newsCell.channelNameLabel.text = data[indexPath.section].ChannelName
+            newsCell.titleLabel.text = data[indexPath.section].ChannelDesc
+            newsCell.dateLabel.text = data[indexPath.section].Date
+            newsCell.firstImage.image = data[indexPath.section].firstImage
+            newsCell.firstDescLabel.text = data[indexPath.section].firstDesc
+            newsCell.firstAuthorLabel.text = data[indexPath.section].firstAuthor
+            newsCell.secondImage.image = data[indexPath.section].secondImage
+            newsCell.secondDescLabel.text = data[indexPath.section].secondDesc
+            newsCell.secondAuthorLabel.text = data[indexPath.section].secondAuthor
             
             return newsCell
         }
