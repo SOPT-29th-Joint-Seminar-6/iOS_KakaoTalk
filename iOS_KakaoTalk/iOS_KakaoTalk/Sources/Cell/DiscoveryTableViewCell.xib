@@ -175,6 +175,16 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="background" destination="y0W-c1-RQk" id="2zY-Ov-6LA"/>
+                <outlet property="channelDescLabel" destination="gAC-ZP-fbB" id="GDL-SO-xWm"/>
+                <outlet property="channelNameLabel" destination="kDe-Ra-Qtw" id="qOn-UI-ZnN"/>
+                <outlet property="dateLabel" destination="YVw-qD-k8t" id="jq9-IB-Kbk"/>
+                <outlet property="firstDescLabel" destination="HhI-Lj-ZJm" id="UqT-uB-h7e"/>
+                <outlet property="firstImageView" destination="Mgi-WI-Uw7" id="aTX-WT-uiq"/>
+                <outlet property="secondDescLabel" destination="BbD-SX-Jb8" id="c8L-YR-Eoo"/>
+                <outlet property="secondImageView" destination="fTk-jI-hKb" id="m2t-BA-qa0"/>
+            </connections>
             <point key="canvasLocation" x="138.40579710144928" y="82.03125"/>
         </tableViewCell>
     </objects>

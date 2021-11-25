@@ -97,7 +97,7 @@ extension ViewVC: UICollectionViewDelegateFlowLayout {
         return 0
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
+        return 17
     }
 }
 
