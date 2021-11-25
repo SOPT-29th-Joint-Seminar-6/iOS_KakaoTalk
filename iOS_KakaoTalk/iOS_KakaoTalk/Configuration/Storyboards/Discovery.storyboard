@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDT-fR-UNj">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5br-ct-XiJ">
                                                 <rect key="frame" x="10" y="15" width="361" height="74"/>
@@ -31,7 +31,7 @@
                                                 </constraints>
                                             </stackView>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bo8-FX-HNS">
-                                                <rect key="frame" x="13" y="109" width="388" height="704"/>
+                                                <rect key="frame" x="13" y="109" width="388" height="1391"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </tableView>
                                         </subviews>
@@ -44,6 +44,7 @@
                                             <constraint firstItem="5br-ct-XiJ" firstAttribute="leading" secondItem="cDT-fR-UNj" secondAttribute="leading" constant="10" id="c79-S6-lwj"/>
                                             <constraint firstItem="Bo8-FX-HNS" firstAttribute="top" secondItem="5br-ct-XiJ" secondAttribute="bottom" constant="20" id="ldW-j6-Yay"/>
                                             <constraint firstItem="Bo8-FX-HNS" firstAttribute="leading" secondItem="cDT-fR-UNj" secondAttribute="leading" constant="13" id="qu7-oQ-uVA"/>
+                                            <constraint firstAttribute="height" priority="250" constant="1500" id="tMV-mO-rIa"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -63,7 +64,6 @@
                             <constraint firstItem="cDT-fR-UNj" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="geR-n7-nn2"/>
                             <constraint firstItem="n9v-s6-AQm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="mRW-F8-Uk3"/>
                             <constraint firstItem="n9v-s6-AQm" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="nER-Va-X1C"/>
-                            <constraint firstItem="cDT-fR-UNj" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" priority="250" id="y1h-vW-hGA"/>
                         </constraints>
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
