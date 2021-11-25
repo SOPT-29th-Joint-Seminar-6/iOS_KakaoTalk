@@ -10,9 +10,9 @@ import UIKit
 extension UIColor {
     static var systemGrayBrightness: CGFloat {
         let grayColor: UIColor = UIColor.systemGray
-        var hue: CGFloat = CGFloat.zero, saturation: CGFloat = CGFloat.zero, brightness: CGFloat = CGFloat.zero, alpha: CGFloat = CGFloat.zero
+        var brightness: CGFloat = CGFloat.zero
 
-        grayColor.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
+        grayColor.getHue(nil, saturation: nil, brightness: &brightness, alpha: nil)
         return brightness
     }
 }

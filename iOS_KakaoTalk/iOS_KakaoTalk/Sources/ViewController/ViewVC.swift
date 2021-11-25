@@ -12,7 +12,6 @@ class ViewVC: UIViewController {
     let viewSizeWidth : CGFloat = UIScreen.main.bounds.width
     let customTabbarTitles: [String] = ["발견", "카카오TV", "잔여백신", "코로나19"]
     
-    
     // MARK: - IBOutlet
     @IBOutlet weak var customTabbarCollectionView: UICollectionView!
     @IBOutlet weak var indicatorLine: UIView!
@@ -35,8 +34,6 @@ class ViewVC: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         adjustCustomTabbarForTabbarCell(at: scrollView.contentOffset.x)
-        guard let firstCell: CustomTabbarCell = customTabbarCollectionView.cellForItem(at: IndexPath(item: 0, section: 0)) as? CustomTabbarCell else { return }
-        firstCell.tabLabel.textColor = UIColor.black
     }
     
     func setCustomTabbarCollectionView() {
@@ -68,52 +65,10 @@ extension ViewVC: UICollectionViewDataSource {
         
         return cell
     }
-    
-    private func adjustCustomTabbarForTabbarCell(at Offset: CGFloat) {
-        let currentScrollOffset = Offset / viewSizeWidth
-
-        guard let currentTabbarCell = customTabbarCollectionView.cellForItem(at: IndexPath(item: Int(currentScrollOffset), section: 0)) as? CustomTabbarCell,
-        let rightTabbarCell = customTabbarCollectionView.cellForItem(at: IndexPath(item: Int(currentScrollOffset) + 1, section: 0)) as? CustomTabbarCell else { return }
-
-        let progressPercentage = currentScrollOffset - CGFloat(Int(currentScrollOffset))
-
-        let leftTabbarCellWidth = currentTabbarCell.frame.width
-        let rightTabbarCellWidth = rightTabbarCell.frame.width
-
-        let indicatorWidth = (rightTabbarCellWidth - leftTabbarCellWidth) * progressPercentage + leftTabbarCellWidth
-
-        let leftTabbarCellX = currentTabbarCell.frame.origin.x
-        let rightTabbarCellX = rightTabbarCell.frame.origin.x
-        let indicatorX = (rightTabbarCellX - leftTabbarCellX) * progressPercentage + leftTabbarCellX
-
-        indicatorLineLeading.constant = indicatorX + customTabbarCollectionView.frame.origin.x
-        indicatorLineWidth.constant = indicatorWidth
-        
-        
-        // Calculating Custom Tabbar Label Color Brightness
-        let currentCellColor = currentTabbarCell.tabLabel.textColor
-        let currentRightCellColor = rightTabbarCell.tabLabel.textColor
-        
-        var hue: CGFloat = CGFloat.zero
-        var saturation: CGFloat = CGFloat.zero
-        var alpha: CGFloat = CGFloat.zero
-        
-        var currentCellBrightness: CGFloat = CGFloat.zero
-        currentCellColor?.getHue(&hue, saturation: &saturation, brightness: &currentCellBrightness, alpha: &alpha)
-    
-        var currentRightCellBrightness: CGFloat = CGFloat.zero
-        currentRightCellColor?.getHue(&hue, saturation: &saturation, brightness: &currentRightCellBrightness, alpha: &alpha)
-        
-        rightTabbarCell.tabLabel.textColor = UIColor(hue: hue, saturation: saturation, brightness: UIColor.systemGrayBrightness * (1 - progressPercentage), alpha: alpha)
-        currentTabbarCell.tabLabel.textColor = UIColor(hue: hue, saturation: saturation, brightness: UIColor.systemGrayBrightness * progressPercentage , alpha: alpha)
-        
-    }
-    
 }
 
 extension ViewVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        setCurrentCustomTabLabelColor(at: indexPath)
         switch indexPath.item {
         case 0:
             scrollView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
@@ -127,27 +82,50 @@ extension ViewVC: UICollectionViewDelegate {
             break
         }
     }
-    
-    private func setCurrentCustomTabLabelColor(at indexPath: IndexPath) {
-        guard let currentCell: CustomTabbarCell = customTabbarCollectionView.cellForItem(at: indexPath) as? CustomTabbarCell else { return }
-        customTabbarCollectionView.visibleCells.forEach({(collectionCell) in
-            guard let cell: CustomTabbarCell = collectionCell as? CustomTabbarCell else { return }
-            cell.tabLabel.textColor = UIColor.systemGray
-        })
-        currentCell.tabLabel.textColor = UIColor.black
-    }
-
 }
-
-private var lastContentOffset: CGFloat = CGFloat.zero
 
 extension ViewVC: UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if lastContentOffset < scrollView.contentOffset.x {
-            adjustCustomTabbarForTabbarCell(at: scrollView.contentOffset.x)
-        } else {
-            adjustCustomTabbarForTabbarCell(at: scrollView.contentOffset.x)
-        }
+        adjustCustomTabbarForTabbarCell(at: scrollView.contentOffset.x)
+    }
+    
+    private func adjustCustomTabbarForTabbarCell(at Offset: CGFloat) {
+        let currentScrollOffset = Offset / viewSizeWidth
+
+        guard let currentTabbarCell = customTabbarCollectionView.cellForItem(at: IndexPath(item: Int(currentScrollOffset), section: 0)) as? CustomTabbarCell,
+        let rightTabbarCell = customTabbarCollectionView.cellForItem(at: IndexPath(item: Int(currentScrollOffset) + 1, section: 0)) as? CustomTabbarCell else { return }
+
+        let progressPercentage = currentScrollOffset - CGFloat(Int(currentScrollOffset))
+        
+        // Caculating Custom Tabbar Indicator Line
+        let leftTabbarCellWidth = currentTabbarCell.frame.width
+        let rightTabbarCellWidth = rightTabbarCell.frame.width
+
+        let indicatorWidth = (rightTabbarCellWidth - leftTabbarCellWidth) * progressPercentage + leftTabbarCellWidth
+
+        let leftTabbarCellX = currentTabbarCell.frame.origin.x
+        let rightTabbarCellX = rightTabbarCell.frame.origin.x
+        let indicatorX = (rightTabbarCellX - leftTabbarCellX) * progressPercentage + leftTabbarCellX
+
+        indicatorLineLeading.constant = indicatorX + customTabbarCollectionView.frame.origin.x
+        indicatorLineWidth.constant = indicatorWidth
+        
+        // Calculating Custom Tabbar Label Color Brightness
+        let currentCellColor = currentTabbarCell.tabLabel.textColor
+        let currentRightCellColor = rightTabbarCell.tabLabel.textColor
+        
+        var hue: CGFloat = CGFloat.zero
+        var saturation: CGFloat = CGFloat.zero
+        var alpha: CGFloat = CGFloat.zero
+        
+        var currentCellBrightness: CGFloat = CGFloat.zero
+        currentCellColor?.getHue(&hue, saturation: &saturation, brightness: &currentCellBrightness, alpha: &alpha)
+    
+        var currentRightCellBrightness: CGFloat = CGFloat.zero
+        currentRightCellColor?.getHue(nil, saturation: nil, brightness: &currentRightCellBrightness, alpha: nil)
+        
+        rightTabbarCell.tabLabel.textColor = UIColor(hue: hue, saturation: saturation, brightness: UIColor.systemGrayBrightness * (1 - progressPercentage), alpha: alpha)
+        currentTabbarCell.tabLabel.textColor = UIColor(hue: hue, saturation: saturation, brightness: UIColor.systemGrayBrightness * progressPercentage , alpha: alpha)
     }
 }
