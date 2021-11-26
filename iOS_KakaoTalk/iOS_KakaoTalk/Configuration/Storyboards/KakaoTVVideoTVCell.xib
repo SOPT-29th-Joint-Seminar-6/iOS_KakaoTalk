@@ -20,8 +20,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yl0-oH-PZY" userLabel="cellContentsView">
                         <rect key="frame" x="9" y="0.0" width="358" height="340"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.on.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zpc-UD-fpa">
-                                <rect key="frame" x="0.0" y="-2.5" width="358" height="205"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgThumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="zpc-UD-fpa">
+                                <rect key="frame" x="0.0" y="0.0" width="358" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="358" id="4bf-B5-HWY"/>
                                     <constraint firstAttribute="height" constant="200" id="mCN-OI-EWI"/>
@@ -30,8 +30,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8PL-Ie-5J3" userLabel="InformationView">
                                 <rect key="frame" x="0.0" y="201" width="358" height="139"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.trianglebadge.exclamationmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YCz-YP-Qf2">
-                                        <rect key="frame" x="18" y="17" width="31" height="17"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icFull" translatesAutoresizingMaskIntoConstraints="NO" id="YCz-YP-Qf2">
+                                        <rect key="frame" x="18" y="18" width="29" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="29" id="4Yp-Af-QXf"/>
                                             <constraint firstAttribute="height" constant="16" id="6q0-hT-Ddo"/>
@@ -67,7 +67,7 @@
                                             <constraint firstAttribute="height" constant="1" id="uRX-lS-FBB"/>
                                         </constraints>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="KUr-iU-FTz">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgProfile" translatesAutoresizingMaskIntoConstraints="NO" id="KUr-iU-FTz">
                                         <rect key="frame" x="16" y="85" width="36" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="5Rm-ZX-i1P"/>
@@ -97,7 +97,7 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icShop" translatesAutoresizingMaskIntoConstraints="NO" id="kth-P9-E2K">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icAlert" translatesAutoresizingMaskIntoConstraints="NO" id="kth-P9-E2K">
                                         <rect key="frame" x="320" y="92" width="17" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="IS3-BQ-rpa"/>
@@ -163,10 +163,10 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="icShop" width="19" height="20"/>
-        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
-        <image name="square.and.arrow.up.on.square" catalog="system" width="117" height="128"/>
-        <image name="square.and.arrow.up.trianglebadge.exclamationmark" catalog="system" width="128" height="128"/>
+        <image name="icAlert" width="17" height="20.5"/>
+        <image name="icFull" width="29" height="16"/>
+        <image name="imgProfile" width="36" height="36"/>
+        <image name="imgThumbnail" width="358" height="200"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
