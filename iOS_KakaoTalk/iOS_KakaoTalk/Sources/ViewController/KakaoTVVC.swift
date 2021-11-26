@@ -8,22 +8,46 @@
 import UIKit
 
 class KakaoTVVC: UIViewController {
+    
+    // MARK: - IBOutlet
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    // MARK: - View Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setTableView()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setTableView() {
+        tableView.register(UINib(nibName: "KakaoTVTagListTVCell", bundle: .main), forCellReuseIdentifier: KakaoTVTagListTVCell.identifier)
+        tableView.dataSource = self
     }
-    */
+}
 
+// MARK: - Extension
+
+extension KakaoTVVC: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch indexPath.row {
+        case 0:
+            guard let cell: KakaoTVTagListTVCell = tableView.dequeueReusableCell(withIdentifier: KakaoTVTagListTVCell.identifier) as? KakaoTVTagListTVCell else { return UITableViewCell() }
+            // Set Data Here.....Later
+            
+            return cell
+        case 1...:
+            guard let cell: KakaoTVVideoTVCell = tableView.dequeueReusableCell(withIdentifier: KakaoTVVideoTVCell.identifier, for: indexPath) as? KakaoTVVideoTVCell else { return UITableViewCell() }
+            // Set Data Here.....Later
+            
+            return cell
+        default:
+            return UITableViewCell()
+        }
+    }
 }
