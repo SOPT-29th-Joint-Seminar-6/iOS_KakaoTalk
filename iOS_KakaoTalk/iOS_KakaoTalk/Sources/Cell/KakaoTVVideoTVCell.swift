@@ -11,12 +11,14 @@ class KakaoTVVideoTVCell: UITableViewCell {
     
     // MARK: - Properties
     
-    static var identifier: String = "KakaoTVVideoCell"
+    static var identifier: String = "KakaoTVVideoTVCell"
 
     // MARK: - IBOutlet
+
     @IBOutlet weak var thumbnailImageView: UIImageView!
     @IBOutlet weak var videoTitleLabel: UILabel!
     @IBOutlet weak var videoDescriptionLabel: UILabel!
+    @IBOutlet weak var channelIconImageView: UIImageView!
     @IBOutlet weak var channelTitleLabel: UILabel!
     @IBOutlet weak var channelDescriptionLabel: UILabel!
     

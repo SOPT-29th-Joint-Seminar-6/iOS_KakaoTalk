@@ -22,6 +22,7 @@ class KakaoTVVC: UIViewController {
     
     func setTableView() {
         tableView.register(UINib(nibName: "KakaoTVTagListTVCell", bundle: .main), forCellReuseIdentifier: KakaoTVTagListTVCell.identifier)
+        tableView.register(UINib(nibName: "KakaoTVVideoTVCell", bundle: .main), forCellReuseIdentifier: KakaoTVVideoTVCell.identifier)
         tableView.dataSource = self
     }
 }
@@ -31,7 +32,7 @@ class KakaoTVVC: UIViewController {
 extension KakaoTVVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -39,7 +40,7 @@ extension KakaoTVVC: UITableViewDataSource {
         case 0:
             guard let cell: KakaoTVTagListTVCell = tableView.dequeueReusableCell(withIdentifier: KakaoTVTagListTVCell.identifier) as? KakaoTVTagListTVCell else { return UITableViewCell() }
             // Set Data Here.....Later
-            
+
             return cell
         case 1...:
             guard let cell: KakaoTVVideoTVCell = tableView.dequeueReusableCell(withIdentifier: KakaoTVVideoTVCell.identifier, for: indexPath) as? KakaoTVVideoTVCell else { return UITableViewCell() }
