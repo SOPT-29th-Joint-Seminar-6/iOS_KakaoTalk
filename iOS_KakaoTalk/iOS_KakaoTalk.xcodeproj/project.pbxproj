@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19038B4D274FF5D2002F000D /* KakaoTVTagListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19038B4B274FF5D2002F000D /* KakaoTVTagListTVCell.swift */; };
+		19038B4E274FF5D2002F000D /* KakaoTVTagListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19038B4C274FF5D2002F000D /* KakaoTVTagListTVCell.xib */; };
 		190E7AD227469E1E00A7E292 /* CustomTabbarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 190E7AD127469E1E00A7E292 /* CustomTabbarCell.xib */; };
 		190E7AD42746A3C300A7E292 /* CustomTabbarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E7AD32746A3C300A7E292 /* CustomTabbarCell.swift */; };
+		19D28DFF2750B39600F0C1F2 /* KakaoTVVideoTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D28DFD2750B39600F0C1F2 /* KakaoTVVideoTVCell.swift */; };
+		19D28E002750B39600F0C1F2 /* KakaoTVVideoTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19D28DFE2750B39600F0C1F2 /* KakaoTVVideoTVCell.xib */; };
 		19D4DA9727465EA600F3FECD /* KakaoTV.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D4DA9627465EA600F3FECD /* KakaoTV.storyboard */; };
 		19D4DA9927465EB200F3FECD /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D4DA9827465EB200F3FECD /* Discovery.storyboard */; };
 		19D4DA9B274662A800F3FECD /* KakaoTVVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4DA9A274662A800F3FECD /* KakaoTVVC.swift */; };
@@ -42,8 +46,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19038B4B274FF5D2002F000D /* KakaoTVTagListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoTVTagListTVCell.swift; sourceTree = "<group>"; };
+		19038B4C274FF5D2002F000D /* KakaoTVTagListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KakaoTVTagListTVCell.xib; sourceTree = "<group>"; };
 		190E7AD127469E1E00A7E292 /* CustomTabbarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabbarCell.xib; sourceTree = "<group>"; };
 		190E7AD32746A3C300A7E292 /* CustomTabbarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarCell.swift; sourceTree = "<group>"; };
+		19D28DFD2750B39600F0C1F2 /* KakaoTVVideoTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoTVVideoTVCell.swift; sourceTree = "<group>"; };
+		19D28DFE2750B39600F0C1F2 /* KakaoTVVideoTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KakaoTVVideoTVCell.xib; sourceTree = "<group>"; };
 		19D4DA9627465EA600F3FECD /* KakaoTV.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KakaoTV.storyboard; sourceTree = "<group>"; };
 		19D4DA9827465EB200F3FECD /* Discovery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
 		19D4DA9A274662A800F3FECD /* KakaoTVVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KakaoTVVC.swift; path = iOS_KakaoTalk/Sources/ViewController/KakaoTVVC.swift; sourceTree = SOURCE_ROOT; };
@@ -187,11 +195,13 @@
 				77349160273FA012009CA146 /* Chatting.storyboard */,
 				77349162273FA01C009CA146 /* View.storyboard */,
 				19D4DA9627465EA600F3FECD /* KakaoTV.storyboard */,
+				19038B4C274FF5D2002F000D /* KakaoTVTagListTVCell.xib */,
 				19D4DA9827465EB200F3FECD /* Discovery.storyboard */,
 				77349164273FA064009CA146 /* Shop.storyboard */,
 				77349166273FA092009CA146 /* Plus.storyboard */,
 				190E7AD127469E1E00A7E292 /* CustomTabbarCell.xib */,
 				7705CF372750B859005195DF /* ChannelPopUp.storyboard */,
+				19D28DFE2750B39600F0C1F2 /* KakaoTVVideoTVCell.xib */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -199,11 +209,13 @@
 		77349172273FA191009CA146 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				19038B4B274FF5D2002F000D /* KakaoTVTagListTVCell.swift */,
 				190E7AD32746A3C300A7E292 /* CustomTabbarCell.swift */,
 				7770315C27501D61002CBD19 /* DiscoveryTableViewCell.swift */,
 				7770315D27501D61002CBD19 /* DiscoveryTableViewCell.xib */,
 				7770316327504387002CBD19 /* DiscoverySecondTableViewCell.swift */,
 				7770316427504387002CBD19 /* DiscoverySecondTableViewCell.xib */,
+				19D28DFD2750B39600F0C1F2 /* KakaoTVVideoTVCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -290,8 +302,10 @@
 				7734915F273FA006009CA146 /* Friend.storyboard in Resources */,
 				19D4DA9727465EA600F3FECD /* KakaoTV.storyboard in Resources */,
 				77349133273F9859009CA146 /* LaunchScreen.storyboard in Resources */,
+				19D28E002750B39600F0C1F2 /* KakaoTVVideoTVCell.xib in Resources */,
 				19D4DA9927465EB200F3FECD /* Discovery.storyboard in Resources */,
 				77349130273F9859009CA146 /* Assets.xcassets in Resources */,
+				19038B4E274FF5D2002F000D /* KakaoTVTagListTVCell.xib in Resources */,
 				77349161273FA012009CA146 /* Chatting.storyboard in Resources */,
 				77349163273FA01C009CA146 /* View.storyboard in Resources */,
 				7705CF382750B859005195DF /* ChannelPopUp.storyboard in Resources */,
@@ -312,10 +326,12 @@
 				77349169273FA158009CA146 /* FriendVC.swift in Sources */,
 				77349127273F9856009CA146 /* AppDelegate.swift in Sources */,
 				19D4DA9B274662A800F3FECD /* KakaoTVVC.swift in Sources */,
+				19D28DFF2750B39600F0C1F2 /* KakaoTVVideoTVCell.swift in Sources */,
 				7770316527504387002CBD19 /* DiscoverySecondTableViewCell.swift in Sources */,
 				7734916F273FA17F009CA146 /* ShopVC.swift in Sources */,
 				77349129273F9856009CA146 /* SceneDelegate.swift in Sources */,
 				190E7AD42746A3C300A7E292 /* CustomTabbarCell.swift in Sources */,
+				19038B4D274FF5D2002F000D /* KakaoTVTagListTVCell.swift in Sources */,
 				7770316227503C32002CBD19 /* ChannelResponse.swift in Sources */,
 				77349149273F9D6C009CA146 /* Token.swift in Sources */,
 				7705CF3A2750B87F005195DF /* ChannelPopUpVC.swift in Sources */,
