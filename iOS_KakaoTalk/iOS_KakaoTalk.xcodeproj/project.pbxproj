@@ -13,6 +13,8 @@
 		19D4DA9927465EB200F3FECD /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D4DA9827465EB200F3FECD /* Discovery.storyboard */; };
 		19D4DA9B274662A800F3FECD /* KakaoTVVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4DA9A274662A800F3FECD /* KakaoTVVC.swift */; };
 		19D4DA9D274662BA00F3FECD /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4DA9C274662BA00F3FECD /* DiscoveryVC.swift */; };
+		7705CF382750B859005195DF /* ChannelPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7705CF372750B859005195DF /* ChannelPopUp.storyboard */; };
+		7705CF3A2750B87F005195DF /* ChannelPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7705CF392750B87F005195DF /* ChannelPopUpVC.swift */; };
 		77349127273F9856009CA146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77349126273F9856009CA146 /* AppDelegate.swift */; };
 		77349129273F9856009CA146 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77349128273F9856009CA146 /* SceneDelegate.swift */; };
 		77349130273F9859009CA146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7734912F273F9859009CA146 /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		19D4DA9827465EB200F3FECD /* Discovery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
 		19D4DA9A274662A800F3FECD /* KakaoTVVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KakaoTVVC.swift; path = iOS_KakaoTalk/Sources/ViewController/KakaoTVVC.swift; sourceTree = SOURCE_ROOT; };
 		19D4DA9C274662BA00F3FECD /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
+		7705CF372750B859005195DF /* ChannelPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelPopUp.storyboard; sourceTree = "<group>"; };
+		7705CF392750B87F005195DF /* ChannelPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelPopUpVC.swift; sourceTree = "<group>"; };
 		77349123273F9856009CA146 /* iOS_KakaoTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_KakaoTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77349126273F9856009CA146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77349128273F9856009CA146 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 				7734916C273FA176009CA146 /* ViewVC.swift */,
 				7734916E273FA17F009CA146 /* ShopVC.swift */,
 				77349170273FA18B009CA146 /* PlusVC.swift */,
+				7705CF392750B87F005195DF /* ChannelPopUpVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				77349164273FA064009CA146 /* Shop.storyboard */,
 				77349166273FA092009CA146 /* Plus.storyboard */,
 				190E7AD127469E1E00A7E292 /* CustomTabbarCell.xib */,
+				7705CF372750B859005195DF /* ChannelPopUp.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -288,6 +294,7 @@
 				77349130273F9859009CA146 /* Assets.xcassets in Resources */,
 				77349161273FA012009CA146 /* Chatting.storyboard in Resources */,
 				77349163273FA01C009CA146 /* View.storyboard in Resources */,
+				7705CF382750B859005195DF /* ChannelPopUp.storyboard in Resources */,
 				7770315F27501D61002CBD19 /* DiscoveryTableViewCell.xib in Resources */,
 				7734915D273F9F25009CA146 /* BaseTabBar.storyboard in Resources */,
 			);
@@ -311,6 +318,7 @@
 				190E7AD42746A3C300A7E292 /* CustomTabbarCell.swift in Sources */,
 				7770316227503C32002CBD19 /* ChannelResponse.swift in Sources */,
 				77349149273F9D6C009CA146 /* Token.swift in Sources */,
+				7705CF3A2750B87F005195DF /* ChannelPopUpVC.swift in Sources */,
 				77349171273FA18B009CA146 /* PlusVC.swift in Sources */,
 				7734913E273F9C33009CA146 /* Constants.swift in Sources */,
 				7734916B273FA166009CA146 /* ChattingVC.swift in Sources */,
