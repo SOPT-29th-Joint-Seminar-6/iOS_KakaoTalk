@@ -15,6 +15,8 @@ class KakaoTVVideoTVCell: UITableViewCell {
 
     // MARK: - IBOutlet
 
+    @IBOutlet var cellContentsView: UIView!
+    
     @IBOutlet weak var thumbnailImageView: UIImageView!
     @IBOutlet weak var videoTitleLabel: UILabel!
     @IBOutlet weak var videoDescriptionLabel: UILabel!
@@ -22,12 +24,26 @@ class KakaoTVVideoTVCell: UITableViewCell {
     @IBOutlet weak var channelTitleLabel: UILabel!
     @IBOutlet weak var channelDescriptionLabel: UILabel!
     
+    @IBOutlet var seperatorLine: UIView!
+    
+    @IBOutlet var informationView: UIView!
     
     // MARK: - View Life Cycle
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
+        setUI()
+    }
+    
+    func setUI() {
+        backgroundColor = UIColor(rgb: 0xf5f5f5)
+        seperatorLine.backgroundColor = UIColor(rgb: 0xf5f5f5)
+        cellContentsView.layer.cornerRadius = 10
+        cellContentsView.layer.masksToBounds = true
+        
+        videoDescriptionLabel.textColor = UIColor.gray4
+        channelDescriptionLabel.textColor = UIColor.gray4
     }
     
 }

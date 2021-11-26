@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="382" height="357"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yl0-oH-PZY" userLabel="BackgroundView">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yl0-oH-PZY" userLabel="cellContentsView">
                         <rect key="frame" x="9" y="0.0" width="358" height="340"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.on.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zpc-UD-fpa">
@@ -37,16 +37,27 @@
                                             <constraint firstAttribute="height" constant="16" id="6q0-hT-Ddo"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6회. 속보! 신용 거래 개미 등장?!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3a-d2-jnP">
-                                        <rect key="frame" x="51" y="18" width="217" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3a-d2-jnP">
+                                        <rect key="frame" x="51" y="18" width="214" height="21"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="6회. 속보! 신용 거래 개미 등장?!">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="AppleSDGothicNeo-Regular"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7t-g0-q6z">
-                                        <rect key="frame" x="18" y="42" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7t-g0-q6z">
+                                        <rect key="frame" x="18" y="42" width="301.5" height="16"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="흔들리는 장중 속에서~멘탈을 잡아볼 거야.. 울고 있는 개미..">
+                                                <attributes>
+                                                    <font key="NSFont" size="13" name="AppleSDGothicNeo-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wvO-Lq-4Jn">
@@ -63,16 +74,27 @@
                                             <constraint firstAttribute="width" constant="36" id="F19-uw-KM0"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCs-Gx-Qh1">
-                                        <rect key="frame" x="60" y="87" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCs-Gx-Qh1">
+                                        <rect key="frame" x="60" y="87" width="139.5" height="17"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="개미는 오늘도 뚠뚠 챕터5">
+                                                <attributes>
+                                                    <font key="NSFont" size="14" name="AppleSDGothicNeo-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmG-Am-73G">
-                                        <rect key="frame" x="62" y="109" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmG-Am-73G">
+                                        <rect key="frame" x="62" y="105" width="116" height="13.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="MZ세대 주식투자 프로젝트">
+                                                <attributes>
+                                                    <font key="NSFont" size="11" name="AppleSDGothicNeo-Regular"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icShop" translatesAutoresizingMaskIntoConstraints="NO" id="kth-P9-E2K">
@@ -106,7 +128,6 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zpc-UD-fpa" firstAttribute="leading" secondItem="yl0-oH-PZY" secondAttribute="leading" id="9H6-Vh-h9g"/>
                             <constraint firstAttribute="trailing" secondItem="8PL-Ie-5J3" secondAttribute="trailing" id="QAc-ep-2uN"/>
@@ -128,9 +149,12 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="cellContentsView" destination="yl0-oH-PZY" id="nFQ-LW-e9Y"/>
                 <outlet property="channelDescriptionLabel" destination="UmG-Am-73G" id="SML-3n-uQ9"/>
                 <outlet property="channelIconImageView" destination="KUr-iU-FTz" id="cwQ-Dd-zsQ"/>
                 <outlet property="channelTitleLabel" destination="rCs-Gx-Qh1" id="7bf-FE-Xhx"/>
+                <outlet property="informationView" destination="8PL-Ie-5J3" id="W4e-7N-c9f"/>
+                <outlet property="seperatorLine" destination="wvO-Lq-4Jn" id="4VD-Tg-3u3"/>
                 <outlet property="thumbnailImageView" destination="zpc-UD-fpa" id="fRP-1H-Woc"/>
                 <outlet property="videoDescriptionLabel" destination="B7t-g0-q6z" id="php-1a-Vme"/>
                 <outlet property="videoTitleLabel" destination="k3a-d2-jnP" id="eVc-dg-hbr"/>

@@ -24,6 +24,7 @@ class KakaoTVVC: UIViewController {
         tableView.register(UINib(nibName: "KakaoTVTagListTVCell", bundle: .main), forCellReuseIdentifier: KakaoTVTagListTVCell.identifier)
         tableView.register(UINib(nibName: "KakaoTVVideoTVCell", bundle: .main), forCellReuseIdentifier: KakaoTVVideoTVCell.identifier)
         tableView.dataSource = self
+        tableView.separatorColor = UIColor.clear
     }
 }
 

@@ -22,9 +22,10 @@ class KakaoTVTagListTVCell: UITableViewCell {
         super.awakeFromNib()
 
         setTagButtonList()
+        setUI()
     }
 
-    
+    // MARK: - IBAction
     @IBAction func touchTagButton(_ sender: UIButton) {
         sender.isSelected.toggle()
         if sender.isSelected {
@@ -45,5 +46,9 @@ class KakaoTVTagListTVCell: UITableViewCell {
             $0.layer.borderColor = UIColor.gray1.cgColor
             $0.layer.cornerRadius = 16
         })
+    }
+    
+    func setUI() {
+        backgroundColor = UIColor(rgb: 0xf5f5f5)
     }
 }
