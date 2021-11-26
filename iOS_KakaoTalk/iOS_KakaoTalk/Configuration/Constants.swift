@@ -14,6 +14,11 @@ struct Const{
 extension Const {
     struct Storyboard {
         static let discovery = "Discovery"
+        static let channelPopUp = "ChannelPopUp"
+    }
+    
+    struct ViewController {
+        static let channelPopUpVC = "ChannelPopUpVC"
     }
     
     struct Xib {

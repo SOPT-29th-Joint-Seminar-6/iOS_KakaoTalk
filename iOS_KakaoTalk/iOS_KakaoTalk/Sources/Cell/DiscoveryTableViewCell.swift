@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol channelPlusTouch{
+    func presentPopUp(index: Int)
+}
+
 class DiscoveryTableViewCell: UITableViewCell {
 
     @IBOutlet weak var background: UIView!
@@ -21,6 +25,13 @@ class DiscoveryTableViewCell: UITableViewCell {
     @IBOutlet weak var secondImageView: UIImageView!
     @IBOutlet weak var secondDescLabel: UILabel!
     @IBOutlet weak var secondAuthorLabel: UILabel!
+    
+    var delegate : channelPlusTouch?
+    var index : Int = 0
+    
+    @IBAction func presentPopUp(_ sender: Any) {
+        delegate?.presentPopUp(index: index)
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

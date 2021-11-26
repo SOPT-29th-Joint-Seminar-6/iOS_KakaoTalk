@@ -90,6 +90,8 @@ extension DiscoveryVC : UITableViewDataSource{
                 return UITableViewCell()
             }
             
+            newsCell.delegate = self
+            newsCell.index = indexPath.section
             newsCell.icon.image = data[indexPath.section].Icon
             newsCell.channelNameLabel.text = data[indexPath.section].ChannelName
             newsCell.channelDescLabel.text = data[indexPath.section].ChannelDesc
@@ -105,6 +107,8 @@ extension DiscoveryVC : UITableViewDataSource{
                 return UITableViewCell()
             }
             
+            newsCell.delegate = self
+            newsCell.index = indexPath.section
             newsCell.icon.image = data[indexPath.section].Icon
             newsCell.channelNameLabel.text = data[indexPath.section].ChannelName
             newsCell.titleLabel.text = data[indexPath.section].ChannelDesc
@@ -119,6 +123,14 @@ extension DiscoveryVC : UITableViewDataSource{
             return newsCell
         }
     }
-    
-    
 }
+
+extension DiscoveryVC : channelPlusTouch{
+    func presentPopUp(index: Int) {
+        guard let nextVC = UIStoryboard.init(name: Const.Storyboard.channelPopUp, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.channelPopUpVC) as? ChannelPopUpVC else { return }
+        nextVC.modalPresentationStyle = .overCurrentContext
+        nextVC.modalTransitionStyle = .crossDissolve
+        self.present(nextVC, animated: true, completion: nil)
+    }
+}
+
