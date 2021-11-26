@@ -107,6 +107,8 @@ extension DiscoveryVC : UITableViewDataSource{
                 return UITableViewCell()
             }
             
+            newsCell.delegate = self
+            newsCell.index = indexPath.section
             newsCell.icon.image = data[indexPath.section].Icon
             newsCell.channelNameLabel.text = data[indexPath.section].ChannelName
             newsCell.titleLabel.text = data[indexPath.section].ChannelDesc

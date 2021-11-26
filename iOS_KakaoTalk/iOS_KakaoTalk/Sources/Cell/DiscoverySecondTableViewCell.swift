@@ -20,6 +20,12 @@ class DiscoverySecondTableViewCell: UITableViewCell {
     @IBOutlet weak var secondDescLabel: UILabel!
     @IBOutlet weak var secondAuthorLabel: UILabel!
     
+    @IBAction func presentPopUp(_ sender: Any) {
+        delegate?.presentPopUp(index: index)
+    }
+    
+    var delegate : channelPlusTouch?
+    var index : Int = 0
     
     override func awakeFromNib() {
         super.awakeFromNib()
