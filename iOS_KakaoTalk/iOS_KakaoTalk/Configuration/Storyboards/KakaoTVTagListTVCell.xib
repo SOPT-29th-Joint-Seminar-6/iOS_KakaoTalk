@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="i5U-X0-ZTy">
-                        <rect key="frame" x="0.0" y="15" width="276.5" height="87"/>
+                        <rect key="frame" x="9" y="15" width="276.5" height="87"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xwO-78-PTt">
                                 <rect key="frame" x="0.0" y="0.0" width="99" height="87"/>
@@ -129,7 +129,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="i5U-X0-ZTy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="7Aj-nm-gOx"/>
-                    <constraint firstItem="i5U-X0-ZTy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qNI-uK-WLr"/>
+                    <constraint firstItem="i5U-X0-ZTy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="Y0m-4X-1gZ"/>
                     <constraint firstAttribute="bottom" secondItem="i5U-X0-ZTy" secondAttribute="bottom" constant="14" id="thk-6u-Hna"/>
                 </constraints>
             </tableViewCellContentView>
