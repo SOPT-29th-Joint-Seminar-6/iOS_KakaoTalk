@@ -22,26 +22,82 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgCamera" translatesAutoresizingMaskIntoConstraints="NO" id="Fxu-Ha-7IF">
                                         <rect key="frame" x="20" y="17" width="79" height="74"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qq-1x-dO5">
-                                        <rect key="frame" x="136" y="67" width="30" height="16"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qq-1x-dO5">
+                                        <rect key="frame" x="100" y="65" width="30" height="16"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9H-cn-gN5">
-                                        <rect key="frame" x="95" y="38" width="39" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="채널 추가 시," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvW-aI-1xB">
+                                        <rect key="frame" x="25" y="167" width="66.5" height="16"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnh-kP-c2I">
+                                        <rect key="frame" x="130.5" y="110" width="30" height="16"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9H-cn-gN5">
+                                        <rect key="frame" x="100" y="40" width="39" height="21"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1rD-4H-MSF">
+                                        <rect key="frame" x="25" y="147.5" width="241" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="b4z-da-gfD"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deG-SA-jOB">
+                                        <rect key="frame" x="25" y="277" width="117" height="38"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="btnCancle"/>
+                                        <connections>
+                                            <action selector="tapToCancel:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Izo-am-dfQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBK-lJ-pyX">
+                                        <rect key="frame" x="149" y="277" width="117" height="38"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="btnChannel"/>
+                                        <connections>
+                                            <action selector="tapToAddChannel:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="QRR-O4-H2h"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RO-36-0GV">
+                                        <rect key="frame" x="31" y="190" width="30" height="16"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="E9H-cn-gN5" firstAttribute="top" secondItem="2OZ-QV-mCf" secondAttribute="top" constant="40" id="4b4-EP-LTs"/>
+                                    <constraint firstItem="5qq-1x-dO5" firstAttribute="top" secondItem="E9H-cn-gN5" secondAttribute="bottom" constant="4" id="51w-RL-sf1"/>
+                                    <constraint firstItem="E9H-cn-gN5" firstAttribute="leading" secondItem="Fxu-Ha-7IF" secondAttribute="trailing" constant="1" id="5if-he-7Z4"/>
+                                    <constraint firstItem="vvW-aI-1xB" firstAttribute="leading" secondItem="2OZ-QV-mCf" secondAttribute="leading" constant="25" id="A7l-sH-dzS"/>
+                                    <constraint firstItem="Pnh-kP-c2I" firstAttribute="centerX" secondItem="2OZ-QV-mCf" secondAttribute="centerX" id="EiC-YG-ihP"/>
+                                    <constraint firstItem="5qq-1x-dO5" firstAttribute="leading" secondItem="Fxu-Ha-7IF" secondAttribute="trailing" constant="1" id="FA8-Ad-Oqy"/>
+                                    <constraint firstItem="vvW-aI-1xB" firstAttribute="top" secondItem="1rD-4H-MSF" secondAttribute="bottom" constant="18.5" id="KzW-Cz-089"/>
+                                    <constraint firstItem="1rD-4H-MSF" firstAttribute="leading" secondItem="2OZ-QV-mCf" secondAttribute="leading" constant="25" id="R5R-NL-M6X"/>
+                                    <constraint firstItem="1rD-4H-MSF" firstAttribute="centerX" secondItem="2OZ-QV-mCf" secondAttribute="centerX" id="TUP-B9-FSv"/>
+                                    <constraint firstAttribute="bottom" secondItem="deG-SA-jOB" secondAttribute="bottom" constant="25" id="V5O-Mj-fEn"/>
+                                    <constraint firstItem="1rD-4H-MSF" firstAttribute="top" secondItem="Pnh-kP-c2I" secondAttribute="bottom" constant="21.5" id="WS4-UP-std"/>
                                     <constraint firstAttribute="height" constant="340" id="WsA-49-yUV"/>
                                     <constraint firstItem="Fxu-Ha-7IF" firstAttribute="leading" secondItem="2OZ-QV-mCf" secondAttribute="leading" constant="20" id="Xhb-xp-vAt"/>
+                                    <constraint firstItem="Pnh-kP-c2I" firstAttribute="top" secondItem="Fxu-Ha-7IF" secondAttribute="bottom" constant="19" id="hqH-GZ-80E"/>
                                     <constraint firstItem="Fxu-Ha-7IF" firstAttribute="top" secondItem="2OZ-QV-mCf" secondAttribute="top" constant="17" id="ikJ-Lx-olc"/>
+                                    <constraint firstAttribute="bottom" secondItem="lBK-lJ-pyX" secondAttribute="bottom" constant="25" id="lsz-Uv-aO5"/>
+                                    <constraint firstAttribute="trailing" secondItem="lBK-lJ-pyX" secondAttribute="trailing" constant="25" id="nFO-qD-syN"/>
+                                    <constraint firstItem="3RO-36-0GV" firstAttribute="top" secondItem="vvW-aI-1xB" secondAttribute="bottom" constant="7" id="qSC-EN-ncW"/>
+                                    <constraint firstItem="deG-SA-jOB" firstAttribute="leading" secondItem="2OZ-QV-mCf" secondAttribute="leading" constant="25" id="x8y-jT-iNP"/>
+                                    <constraint firstItem="3RO-36-0GV" firstAttribute="leading" secondItem="2OZ-QV-mCf" secondAttribute="leading" constant="31" id="xxe-nB-rbF"/>
                                     <constraint firstAttribute="width" constant="291" id="yIe-wJ-P9c"/>
                                 </constraints>
                             </view>
@@ -55,6 +111,11 @@
                     </view>
                     <connections>
                         <outlet property="background" destination="5EZ-qb-Rvc" id="flR-sd-9Eg"/>
+                        <outlet property="channelDescLabel" destination="Pnh-kP-c2I" id="wjV-lS-Uam"/>
+                        <outlet property="channelNameLabel" destination="E9H-cn-gN5" id="eRr-Pk-I9L"/>
+                        <outlet property="explainLabel" destination="3RO-36-0GV" id="Ksd-DA-msF"/>
+                        <outlet property="friendLabel" destination="5qq-1x-dO5" id="5Ac-cy-mD9"/>
+                        <outlet property="icon" destination="Fxu-Ha-7IF" id="g5k-md-HOc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -63,9 +124,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="btnCancle" width="117" height="38"/>
+        <image name="btnChannel" width="117" height="38"/>
         <image name="imgCamera" width="79" height="74"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
