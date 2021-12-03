@@ -28,6 +28,7 @@ class DiscoveryTableViewCell: UITableViewCell {
     
     var delegate : channelPlusTouch?
     var index : Int = 0
+    var channelId : Int = 0
     
     @IBAction func presentPopUp(_ sender: Any) {
         delegate?.presentPopUp(index: index)

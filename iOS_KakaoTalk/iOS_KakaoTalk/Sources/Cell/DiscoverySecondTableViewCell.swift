@@ -26,6 +26,7 @@ class DiscoverySecondTableViewCell: UITableViewCell {
     
     var delegate : channelPlusTouch?
     var index : Int = 0
+    var channelId : Int = 0
     
     override func awakeFromNib() {
         super.awakeFromNib()

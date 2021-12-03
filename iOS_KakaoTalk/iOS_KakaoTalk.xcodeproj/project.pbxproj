@@ -49,6 +49,7 @@
 		7770316627504387002CBD19 /* DiscoverySecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7770316427504387002CBD19 /* DiscoverySecondTableViewCell.xib */; };
 		7781293C275A3613004B34F4 /* ViewFindService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7781293B275A3613004B34F4 /* ViewFindService.swift */; };
 		7781293E275A361D004B34F4 /* ViewFindResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7781293D275A361D004B34F4 /* ViewFindResponse.swift */; };
+		77812940275A5C1E004B34F4 /* ChannelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7781293F275A5C1E004B34F4 /* ChannelService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 		7770316427504387002CBD19 /* DiscoverySecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverySecondTableViewCell.xib; sourceTree = "<group>"; };
 		7781293B275A3613004B34F4 /* ViewFindService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFindService.swift; sourceTree = "<group>"; };
 		7781293D275A361D004B34F4 /* ViewFindResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFindResponse.swift; sourceTree = "<group>"; };
+		7781293F275A5C1E004B34F4 /* ChannelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelService.swift; sourceTree = "<group>"; };
 		E57FD7D3C8BF9FFE51D94E90 /* Pods-iOS_KakaoTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_KakaoTalk.release.xcconfig"; path = "Target Support Files/Pods-iOS_KakaoTalk/Pods-iOS_KakaoTalk.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 			children = (
 				19458956275A0844004442BA /* KakaoTVService.swift */,
 				7781293B275A3613004B34F4 /* ViewFindService.swift */,
+				7781293F275A5C1E004B34F4 /* ChannelService.swift */,
 			);
 			path = APIModel;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				19D4DA9D274662BA00F3FECD /* DiscoveryVC.swift in Sources */,
 				7781293C275A3613004B34F4 /* ViewFindService.swift in Sources */,
 				7770315E27501D61002CBD19 /* DiscoveryTableViewCell.swift in Sources */,
+				77812940275A5C1E004B34F4 /* ChannelService.swift in Sources */,
 				7781293E275A361D004B34F4 /* ViewFindResponse.swift in Sources */,
 				77349142273F9C60009CA146 /* UIColor.swift in Sources */,
 			);

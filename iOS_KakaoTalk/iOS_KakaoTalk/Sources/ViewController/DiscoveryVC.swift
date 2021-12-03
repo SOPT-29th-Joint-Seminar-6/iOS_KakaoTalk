@@ -104,6 +104,7 @@ extension DiscoveryVC : UITableViewDataSource{
             
             newsCell.delegate = self
             newsCell.index = indexPath.section
+            newsCell.channelId = viewFindData?[indexPath.section].id ?? 1
             
             newsCell.icon.image = data[indexPath.section].Icon
             newsCell.channelNameLabel.text = viewFindData?[indexPath.section].channelName
@@ -124,6 +125,7 @@ extension DiscoveryVC : UITableViewDataSource{
             
             newsCell.delegate = self
             newsCell.index = indexPath.section
+            newsCell.channelId = viewFindData?[indexPath.section].id ?? 1 
             
             newsCell.icon.image = data[indexPath.section].Icon
             newsCell.channelNameLabel.text = viewFindData?[indexPath.section].channelName
@@ -145,9 +147,17 @@ extension DiscoveryVC : UITableViewDataSource{
 
 extension DiscoveryVC : channelPlusTouch{
     func presentPopUp(index: Int) {
+        ViewFindService.shared.getThumbnail { data in
+            guard let data = data else { return }
+            self.viewFindData = data.data
+            self.viewFindData?.sort(by: {$0.id < $1.id})
+            self.newsTableView.reloadData()
+        }
+        
         guard let nextVC = UIStoryboard.init(name: Const.Storyboard.channelPopUp, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.channelPopUpVC) as? ChannelPopUpVC else { return }
         nextVC.modalPresentationStyle = .overCurrentContext
         nextVC.modalTransitionStyle = .crossDissolve
+        
         self.present(nextVC, animated: true, completion: nil)
     }
 }
