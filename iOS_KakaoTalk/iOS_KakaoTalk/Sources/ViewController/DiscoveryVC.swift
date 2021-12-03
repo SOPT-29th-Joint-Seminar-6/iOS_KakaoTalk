@@ -146,19 +146,17 @@ extension DiscoveryVC : UITableViewDataSource{
 }
 
 extension DiscoveryVC : channelPlusTouch{
-    func presentPopUp(index: Int) {
-        ViewFindService.shared.getThumbnail { data in
-            guard let data = data else { return }
-            self.viewFindData = data.data
-            self.viewFindData?.sort(by: {$0.id < $1.id})
-            self.newsTableView.reloadData()
-        }
-        
+    func presentPopUp(index: Int, id: Int) {
+    
         guard let nextVC = UIStoryboard.init(name: Const.Storyboard.channelPopUp, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.channelPopUpVC) as? ChannelPopUpVC else { return }
         nextVC.modalPresentationStyle = .overCurrentContext
         nextVC.modalTransitionStyle = .crossDissolve
         
-        self.present(nextVC, animated: true, completion: nil)
+        ChannelService.shared.getChannelInfo(id: id) { data in
+            guard let data = data else { return }
+            nextVC.channelPlusData = data.data
+            self.present(nextVC, animated: true, completion: nil)
+        }
     }
 }
 

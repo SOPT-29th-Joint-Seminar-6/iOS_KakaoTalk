@@ -21,7 +21,7 @@ class DiscoverySecondTableViewCell: UITableViewCell {
     @IBOutlet weak var secondAuthorLabel: UILabel!
     
     @IBAction func presentPopUp(_ sender: Any) {
-        delegate?.presentPopUp(index: index)
+        delegate?.presentPopUp(index: index, id : channelId)
     }
     
     var delegate : channelPlusTouch?

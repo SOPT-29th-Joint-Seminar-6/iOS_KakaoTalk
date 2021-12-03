@@ -13,5 +13,5 @@ struct APIConstants {
     static let getArticle: String = baseURL + "/view/viewfind"
     static let getKakaoTVThumbnail: String = baseURL + "/view/viewthumb"
     static let addPlusChannel: String = baseURL + "/channel"
-    static let getPlusChannelInfo: (String) -> String = { id in baseURL + "/channel/" + id }
+    static let getPlusChannelInfo: String = baseURL + "/channel/"
 }
