@@ -11,6 +11,7 @@
 		19038B4E274FF5D2002F000D /* KakaoTVTagListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19038B4C274FF5D2002F000D /* KakaoTVTagListTVCell.xib */; };
 		190E7AD227469E1E00A7E292 /* CustomTabbarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 190E7AD127469E1E00A7E292 /* CustomTabbarCell.xib */; };
 		190E7AD42746A3C300A7E292 /* CustomTabbarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E7AD32746A3C300A7E292 /* CustomTabbarCell.swift */; };
+		1926083A275A04EF00FE4D7C /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19260839275A04EF00FE4D7C /* APIConstants.swift */; };
 		19D28DFF2750B39600F0C1F2 /* KakaoTVVideoTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D28DFD2750B39600F0C1F2 /* KakaoTVVideoTVCell.swift */; };
 		19D28E002750B39600F0C1F2 /* KakaoTVVideoTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19D28DFE2750B39600F0C1F2 /* KakaoTVVideoTVCell.xib */; };
 		19D4DA9727465EA600F3FECD /* KakaoTV.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D4DA9627465EA600F3FECD /* KakaoTV.storyboard */; };
@@ -51,6 +52,7 @@
 		19038B4C274FF5D2002F000D /* KakaoTVTagListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KakaoTVTagListTVCell.xib; sourceTree = "<group>"; };
 		190E7AD127469E1E00A7E292 /* CustomTabbarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabbarCell.xib; sourceTree = "<group>"; };
 		190E7AD32746A3C300A7E292 /* CustomTabbarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarCell.swift; sourceTree = "<group>"; };
+		19260839275A04EF00FE4D7C /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		19D28DFD2750B39600F0C1F2 /* KakaoTVVideoTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoTVVideoTVCell.swift; sourceTree = "<group>"; };
 		19D28DFE2750B39600F0C1F2 /* KakaoTVVideoTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KakaoTVVideoTVCell.xib; sourceTree = "<group>"; };
 		19D4DA9627465EA600F3FECD /* KakaoTV.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KakaoTV.storyboard; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			children = (
 				7734912F273F9859009CA146 /* Assets.xcassets */,
 				7734913D273F9C33009CA146 /* Constants.swift */,
+				19260839275A04EF00FE4D7C /* APIConstants.swift */,
 				77349155273F9E87009CA146 /* Storyboards */,
 				77349140273F9C43009CA146 /* Secret */,
 				7734913C273F9BFB009CA146 /* Extension */,
@@ -258,7 +261,6 @@
 				5D9AD09569C62504A3781935 /* Pods-iOS_KakaoTalk.debug.xcconfig */,
 				E57FD7D3C8BF9FFE51D94E90 /* Pods-iOS_KakaoTalk.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -398,6 +400,7 @@
 				19D28DFF2750B39600F0C1F2 /* KakaoTVVideoTVCell.swift in Sources */,
 				7770316527504387002CBD19 /* DiscoverySecondTableViewCell.swift in Sources */,
 				7734916F273FA17F009CA146 /* ShopVC.swift in Sources */,
+				1926083A275A04EF00FE4D7C /* APIConstants.swift in Sources */,
 				77349129273F9856009CA146 /* SceneDelegate.swift in Sources */,
 				190E7AD42746A3C300A7E292 /* CustomTabbarCell.swift in Sources */,
 				19038B4D274FF5D2002F000D /* KakaoTVTagListTVCell.swift in Sources */,
