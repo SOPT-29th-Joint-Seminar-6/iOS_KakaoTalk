@@ -17,6 +17,7 @@
 		19D4DA9927465EB200F3FECD /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D4DA9827465EB200F3FECD /* Discovery.storyboard */; };
 		19D4DA9B274662A800F3FECD /* KakaoTVVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4DA9A274662A800F3FECD /* KakaoTVVC.swift */; };
 		19D4DA9D274662BA00F3FECD /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D4DA9C274662BA00F3FECD /* DiscoveryVC.swift */; };
+		57877C16223541AD8FA8A33A /* Pods_iOS_KakaoTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D07E521737FABA0C9C12AB6 /* Pods_iOS_KakaoTalk.framework */; };
 		7705CF382750B859005195DF /* ChannelPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7705CF372750B859005195DF /* ChannelPopUp.storyboard */; };
 		7705CF3A2750B87F005195DF /* ChannelPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7705CF392750B87F005195DF /* ChannelPopUpVC.swift */; };
 		77349127273F9856009CA146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77349126273F9856009CA146 /* AppDelegate.swift */; };
@@ -56,6 +57,8 @@
 		19D4DA9827465EB200F3FECD /* Discovery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
 		19D4DA9A274662A800F3FECD /* KakaoTVVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KakaoTVVC.swift; path = iOS_KakaoTalk/Sources/ViewController/KakaoTVVC.swift; sourceTree = SOURCE_ROOT; };
 		19D4DA9C274662BA00F3FECD /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
+		2D07E521737FABA0C9C12AB6 /* Pods_iOS_KakaoTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_KakaoTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D9AD09569C62504A3781935 /* Pods-iOS_KakaoTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_KakaoTalk.debug.xcconfig"; path = "Target Support Files/Pods-iOS_KakaoTalk/Pods-iOS_KakaoTalk.debug.xcconfig"; sourceTree = "<group>"; };
 		7705CF372750B859005195DF /* ChannelPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChannelPopUp.storyboard; sourceTree = "<group>"; };
 		7705CF392750B87F005195DF /* ChannelPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelPopUpVC.swift; sourceTree = "<group>"; };
 		77349123273F9856009CA146 /* iOS_KakaoTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_KakaoTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +87,7 @@
 		7770316127503C32002CBD19 /* ChannelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelResponse.swift; sourceTree = "<group>"; };
 		7770316327504387002CBD19 /* DiscoverySecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverySecondTableViewCell.swift; sourceTree = "<group>"; };
 		7770316427504387002CBD19 /* DiscoverySecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverySecondTableViewCell.xib; sourceTree = "<group>"; };
+		E57FD7D3C8BF9FFE51D94E90 /* Pods-iOS_KakaoTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_KakaoTalk.release.xcconfig"; path = "Target Support Files/Pods-iOS_KakaoTalk/Pods-iOS_KakaoTalk.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,17 +95,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57877C16223541AD8FA8A33A /* Pods_iOS_KakaoTalk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B329EE5AF8E5EFF36DBD084 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D07E521737FABA0C9C12AB6 /* Pods_iOS_KakaoTalk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7734911A273F9856009CA146 = {
 			isa = PBXGroup;
 			children = (
 				77349125273F9856009CA146 /* iOS_KakaoTalk */,
 				77349124273F9856009CA146 /* Products */,
+				BD7B1FF8890626A933EC7EBD /* Pods */,
+				4B329EE5AF8E5EFF36DBD084 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -237,6 +252,16 @@
 			path = DataModel;
 			sourceTree = "<group>";
 		};
+		BD7B1FF8890626A933EC7EBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D9AD09569C62504A3781935 /* Pods-iOS_KakaoTalk.debug.xcconfig */,
+				E57FD7D3C8BF9FFE51D94E90 /* Pods-iOS_KakaoTalk.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,9 +269,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77349137273F9859009CA146 /* Build configuration list for PBXNativeTarget "iOS_KakaoTalk" */;
 			buildPhases = (
+				8A5D476391E55B8FE3F86347 /* [CP] Check Pods Manifest.lock */,
 				7734911F273F9856009CA146 /* Sources */,
 				77349120273F9856009CA146 /* Frameworks */,
 				77349121273F9856009CA146 /* Resources */,
+				2AFF7849F42D4589E4E4879B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,6 +342,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AFF7849F42D4589E4E4879B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS_KakaoTalk/Pods-iOS_KakaoTalk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS_KakaoTalk/Pods-iOS_KakaoTalk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS_KakaoTalk/Pods-iOS_KakaoTalk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A5D476391E55B8FE3F86347 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS_KakaoTalk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7734911F273F9856009CA146 /* Sources */ = {
@@ -476,6 +545,7 @@
 		};
 		77349138273F9859009CA146 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D9AD09569C62504A3781935 /* Pods-iOS_KakaoTalk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -506,6 +576,7 @@
 		};
 		77349139273F9859009CA146 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E57FD7D3C8BF9FFE51D94E90 /* Pods-iOS_KakaoTalk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
