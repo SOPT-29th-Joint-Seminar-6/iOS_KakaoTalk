@@ -46,4 +46,8 @@ class KakaoTVVideoTVCell: UITableViewCell {
         channelDescriptionLabel.textColor = UIColor.gray4
     }
     
+    override func prepareForReuse() {
+        thumbnailImageView.image = nil
+    }
+    
 }

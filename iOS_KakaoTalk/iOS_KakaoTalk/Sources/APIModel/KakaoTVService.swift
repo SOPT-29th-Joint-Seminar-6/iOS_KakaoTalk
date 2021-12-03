@@ -11,14 +11,14 @@ import Alamofire
 struct KakaoTVService {
     static let shared: KakaoTVService = KakaoTVService()
     
-    func getThumbnail(@escaping completion: (Data?) -> (Void)) {
+    func getThumbnail(completion: @escaping (KakaoTVResponse?) -> (Void)) {
         let url: String = APIConstants.getKakaoTVThumbnail
         
         let header: HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
         
-        let dataRequest = AF.request(url, method: .get, parameters: , encoding: JSONEncoding.default, headers: header)
+        let dataRequest = AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header)
         
         dataRequest.responseData { dataResponse in
             switch dataResponse.result {
@@ -34,10 +34,11 @@ struct KakaoTVService {
         
     }
     
-    private func decodeData(_ data: Data?) {
+    private func decodeData(_ data: Data?) -> KakaoTVResponse? {
         let decoder = JSONDecoder()
+        guard let data = data else { return nil}
         guard let decodedData = try? decoder.decode(KakaoTVResponse.self, from: data) else { print("Decode Error")
-            return }
+            return nil}
         return decodedData
     }
 }
