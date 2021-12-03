@@ -6,16 +6,17 @@
 //
 
 import Foundation
+
 // MARK: - ViewFindResponse
 struct ViewFindResponse: Codable {
     let status: Int
     let success: Bool
     let message: String
-    let data: [Datum]
+    let data: [ViewFindData]
 }
 
 // MARK: - Datum
-struct Datum: Codable {
+struct ViewFindData: Codable {
     let id: Int
     let channelName: String
     let like: Int
@@ -39,10 +40,13 @@ struct Article: Codable {
     let title, writer: String
     let channelID: Int
     let isDeleted: Bool
+    let postImageURL: String
 
     enum CodingKeys: String, CodingKey {
         case id, title, writer
         case channelID = "channelId"
         case isDeleted
+        case postImageURL = "postImageUrl"
     }
 }
+

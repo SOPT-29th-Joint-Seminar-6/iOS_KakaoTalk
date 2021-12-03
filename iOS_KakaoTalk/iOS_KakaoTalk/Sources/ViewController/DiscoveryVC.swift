@@ -11,12 +11,15 @@ class DiscoveryVC: UIViewController {
 
     @IBOutlet weak var newsTableView: UITableView!
     
+    // MARK: - Properties
+    var viewFindData: [ViewFindData]?
     var data : [ChannelResponse] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
         registerXib()
+        requestViewFindData()
         initData()
     }
 
@@ -33,6 +36,15 @@ class DiscoveryVC: UIViewController {
     private func registerXib(){
         newsTableView.register(DiscoveryTableViewCell.nib(), forCellReuseIdentifier: Const.Xib.discoveryTableViewCell)
         newsTableView.register(DiscoverySecondTableViewCell.nib(), forCellReuseIdentifier: Const.Xib.discoverySecondTableViewCell)
+    }
+    
+    func requestViewFindData() {
+        ViewFindService.shared.getThumbnail { data in
+            guard let data = data else { return }
+            self.viewFindData = data.data
+            self.viewFindData?.sort(by: {$0.id < $1.id})
+            self.newsTableView.reloadData()
+        }
     }
     
     private func initData(){
@@ -64,7 +76,7 @@ extension DiscoveryVC : UITableViewDataSource{
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return data.count
+        return viewFindData?.count ?? 2
     }
     
     
@@ -92,14 +104,17 @@ extension DiscoveryVC : UITableViewDataSource{
             
             newsCell.delegate = self
             newsCell.index = indexPath.section
+            
             newsCell.icon.image = data[indexPath.section].Icon
-            newsCell.channelNameLabel.text = data[indexPath.section].ChannelName
-            newsCell.channelDescLabel.text = data[indexPath.section].ChannelDesc
-            newsCell.dateLabel.text = data[indexPath.section].Date
+            newsCell.channelNameLabel.text = viewFindData?[indexPath.section].channelName
+            newsCell.channelDescLabel.text = viewFindData?[indexPath.section].channelDesc
+            newsCell.dateLabel.text = viewFindData?[indexPath.section].createAt
+            
+            newsCell.firstDescLabel.text = viewFindData?[indexPath.section].articles[0].title
+            newsCell.secondDescLabel.text = viewFindData?[indexPath.section].articles[1].title
+            
             newsCell.firstImageView.image = data[indexPath.section].firstImage
-            newsCell.firstDescLabel.text = data[indexPath.section].firstDesc
             newsCell.secondImageView.image = data[indexPath.section].secondImage
-            newsCell.secondDescLabel.text = data[indexPath.section].secondDesc
             
             return newsCell
         default:
@@ -109,16 +124,19 @@ extension DiscoveryVC : UITableViewDataSource{
             
             newsCell.delegate = self
             newsCell.index = indexPath.section
+            
             newsCell.icon.image = data[indexPath.section].Icon
-            newsCell.channelNameLabel.text = data[indexPath.section].ChannelName
-            newsCell.titleLabel.text = data[indexPath.section].ChannelDesc
-            newsCell.dateLabel.text = data[indexPath.section].Date
+            newsCell.channelNameLabel.text = viewFindData?[indexPath.section].channelName
+            newsCell.titleLabel.text = viewFindData?[indexPath.section].channelDesc
+            newsCell.dateLabel.text = viewFindData?[indexPath.section].createAt
+            
+            newsCell.firstDescLabel.text = viewFindData?[indexPath.section].articles[0].title
+            newsCell.firstAuthorLabel.text = viewFindData?[indexPath.section].articles[0].writer
+            newsCell.secondDescLabel.text = viewFindData?[indexPath.section].articles[1].title
+            newsCell.secondAuthorLabel.text = viewFindData?[indexPath.section].articles[1].writer
+            
             newsCell.firstImage.image = data[indexPath.section].firstImage
-            newsCell.firstDescLabel.text = data[indexPath.section].firstDesc
-            newsCell.firstAuthorLabel.text = data[indexPath.section].firstAuthor
             newsCell.secondImage.image = data[indexPath.section].secondImage
-            newsCell.secondDescLabel.text = data[indexPath.section].secondDesc
-            newsCell.secondAuthorLabel.text = data[indexPath.section].secondAuthor
             
             return newsCell
         }
