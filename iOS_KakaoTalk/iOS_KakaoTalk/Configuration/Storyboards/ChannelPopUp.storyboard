@@ -19,8 +19,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2OZ-QV-mCf">
                                 <rect key="frame" x="61.5" y="215" width="291" height="340"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgCamera" translatesAutoresizingMaskIntoConstraints="NO" id="Fxu-Ha-7IF">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgCamera" translatesAutoresizingMaskIntoConstraints="NO" id="Fxu-Ha-7IF">
                                         <rect key="frame" x="20" y="17" width="79" height="74"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="74" id="Jcs-UR-Ddn"/>
+                                            <constraint firstAttribute="width" constant="79" id="gbj-tV-rvq"/>
+                                        </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="친구 78" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qq-1x-dO5">
                                         <rect key="frame" x="100" y="65" width="40" height="16"/>

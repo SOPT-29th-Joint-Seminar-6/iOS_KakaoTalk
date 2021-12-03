@@ -8,7 +8,7 @@
 import UIKit
 
 protocol channelPlusTouch{
-    func presentPopUp(index: Int)
+    func presentPopUp(index: Int, id: Int)
 }
 
 class DiscoveryTableViewCell: UITableViewCell {
@@ -28,9 +28,10 @@ class DiscoveryTableViewCell: UITableViewCell {
     
     var delegate : channelPlusTouch?
     var index : Int = 0
+    var channelId : Int = 0
     
     @IBAction func presentPopUp(_ sender: Any) {
-        delegate?.presentPopUp(index: index)
+        delegate?.presentPopUp(index: index, id: channelId)
     }
     
     override func awakeFromNib() {

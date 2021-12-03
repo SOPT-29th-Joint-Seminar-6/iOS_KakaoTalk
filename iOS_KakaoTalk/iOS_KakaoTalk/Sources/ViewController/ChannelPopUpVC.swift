@@ -26,6 +26,8 @@ class ChannelPopUpVC: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    var channelPlusData: [ChannelData?] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
@@ -35,6 +37,12 @@ class ChannelPopUpVC: UIViewController {
         background.backgroundColor = UIColor.black.withAlphaComponent(0.6)
         popUpView.layer.cornerRadius = 8
         
+        let url = URL(string: channelPlusData[0]?.channelImageURL ?? "")
+        let data = try? Data(contentsOf: url!)
+        icon.image = UIImage(data: data!)
+        channelNameLabel.text = channelPlusData[0]?.channelName
+        channelDescLabel.text = channelPlusData[0]?.channelDesc
+        friendLabel.text = "친구 " + String(channelPlusData[0]?.friendCount ?? 0)
         let grayLabels = [friendLabel, explainTitleLabel, explainLabel]
         
         grayLabels.forEach{
