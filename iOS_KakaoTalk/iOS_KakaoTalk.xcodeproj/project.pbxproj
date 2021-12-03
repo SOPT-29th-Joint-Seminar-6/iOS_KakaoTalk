@@ -12,6 +12,8 @@
 		190E7AD227469E1E00A7E292 /* CustomTabbarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 190E7AD127469E1E00A7E292 /* CustomTabbarCell.xib */; };
 		190E7AD42746A3C300A7E292 /* CustomTabbarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E7AD32746A3C300A7E292 /* CustomTabbarCell.swift */; };
 		1926083A275A04EF00FE4D7C /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19260839275A04EF00FE4D7C /* APIConstants.swift */; };
+		19458957275A0844004442BA /* KakaoTVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19458956275A0844004442BA /* KakaoTVService.swift */; };
+		19458959275A0C7D004442BA /* KakaoTVResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19458958275A0C7D004442BA /* KakaoTVResponse.swift */; };
 		19D28DFF2750B39600F0C1F2 /* KakaoTVVideoTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D28DFD2750B39600F0C1F2 /* KakaoTVVideoTVCell.swift */; };
 		19D28E002750B39600F0C1F2 /* KakaoTVVideoTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19D28DFE2750B39600F0C1F2 /* KakaoTVVideoTVCell.xib */; };
 		19D4DA9727465EA600F3FECD /* KakaoTV.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D4DA9627465EA600F3FECD /* KakaoTV.storyboard */; };
@@ -53,6 +55,8 @@
 		190E7AD127469E1E00A7E292 /* CustomTabbarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabbarCell.xib; sourceTree = "<group>"; };
 		190E7AD32746A3C300A7E292 /* CustomTabbarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarCell.swift; sourceTree = "<group>"; };
 		19260839275A04EF00FE4D7C /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		19458956275A0844004442BA /* KakaoTVService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoTVService.swift; sourceTree = "<group>"; };
+		19458958275A0C7D004442BA /* KakaoTVResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoTVResponse.swift; sourceTree = "<group>"; };
 		19D28DFD2750B39600F0C1F2 /* KakaoTVVideoTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoTVVideoTVCell.swift; sourceTree = "<group>"; };
 		19D28DFE2750B39600F0C1F2 /* KakaoTVVideoTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KakaoTVVideoTVCell.xib; sourceTree = "<group>"; };
 		19D4DA9627465EA600F3FECD /* KakaoTV.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KakaoTV.storyboard; sourceTree = "<group>"; };
@@ -104,6 +108,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19458955275A0830004442BA /* APIModel */ = {
+			isa = PBXGroup;
+			children = (
+				19458956275A0844004442BA /* KakaoTVService.swift */,
+			);
+			path = APIModel;
+			sourceTree = "<group>";
+		};
 		4B329EE5AF8E5EFF36DBD084 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +170,7 @@
 		7734913B273F9BD8009CA146 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				19458955275A0830004442BA /* APIModel */,
 				7770316027503C07002CBD19 /* DataModel */,
 				77349175273FA1E3009CA146 /* Delegates */,
 				77349172273FA191009CA146 /* Cell */,
@@ -251,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				7770316127503C32002CBD19 /* ChannelResponse.swift */,
+				19458958275A0C7D004442BA /* KakaoTVResponse.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -393,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7734914C273F9D9A009CA146 /* Temp.swift in Sources */,
+				19458957275A0844004442BA /* KakaoTVService.swift in Sources */,
 				7734916D273FA176009CA146 /* ViewVC.swift in Sources */,
 				77349169273FA158009CA146 /* FriendVC.swift in Sources */,
 				77349127273F9856009CA146 /* AppDelegate.swift in Sources */,
@@ -409,6 +424,7 @@
 				7705CF3A2750B87F005195DF /* ChannelPopUpVC.swift in Sources */,
 				77349171273FA18B009CA146 /* PlusVC.swift in Sources */,
 				7734913E273F9C33009CA146 /* Constants.swift in Sources */,
+				19458959275A0C7D004442BA /* KakaoTVResponse.swift in Sources */,
 				7734916B273FA166009CA146 /* ChattingVC.swift in Sources */,
 				19D4DA9D274662BA00F3FECD /* DiscoveryVC.swift in Sources */,
 				7770315E27501D61002CBD19 /* DiscoveryTableViewCell.swift in Sources */,
